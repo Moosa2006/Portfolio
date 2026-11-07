@@ -26,6 +26,7 @@ const types = {
   ".glb": "model/gltf-binary",
   ".hdr": "application/octet-stream",
   ".wasm": "application/wasm",
+  ".pdf": "application/pdf",
 };
 
 async function fileFor(pathname) {
