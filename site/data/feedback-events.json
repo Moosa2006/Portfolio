@@ -1,0 +1,22 @@
+[
+  {
+    "event_id": "civora",
+    "event_name": "Civora",
+    "category": "technical"
+  },
+  {
+    "event_id": "pramaan",
+    "event_name": "PRAMAAN",
+    "category": "technical"
+  },
+  {
+    "event_id": "dailytrack",
+    "event_name": "DailyTrack",
+    "category": "technical"
+  },
+  {
+    "event_id": "skillgap",
+    "event_name": "SkillGap",
+    "category": "technical"
+  }
+]

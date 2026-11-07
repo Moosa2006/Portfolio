@@ -1,0 +1,623 @@
+(self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
+  [5379],
+  {
+    13011: (e, a, i) => {
+      "use strict";
+      i.d(a, { default: () => x });
+      var r = i(95155),
+        s = i(12115),
+        t = i(94388),
+        n = i(30827),
+        d = i(5772),
+        l = i(87945),
+        c = i(75796);
+      function o({ size: e = 13 }) {
+        return (0, r.jsx)("svg", {
+          width: e,
+          height: e,
+          viewBox: "0 0 24 24",
+          fill: "currentColor",
+          "aria-hidden": "true",
+          children: (0, r.jsx)("path", {
+            d: "M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z",
+          }),
+        });
+      }
+      function h({ size: e = 12 }) {
+        return (0, r.jsx)("svg", {
+          width: e,
+          height: e,
+          viewBox: "0 0 24 24",
+          fill: "currentColor",
+          "aria-hidden": "true",
+          children: (0, r.jsx)("path", {
+            d: "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451c.979 0 1.778-.773 1.778-1.729V1.73C24 .774 23.205 0 22.222 0h.003z",
+          }),
+        });
+      }
+      function p() {
+        return (0, r.jsxs)("svg", {
+          width: "20",
+          height: "20",
+          viewBox: "0 0 100 100",
+          fill: "none",
+          className: "jp-card-kamon",
+          "aria-hidden": "true",
+          children: [
+            (0, r.jsx)("circle", {
+              cx: "50",
+              cy: "50",
+              r: "46",
+              stroke: "#C49A45",
+              strokeWidth: "1.5",
+              opacity: "0.85",
+            }),
+            (0, r.jsx)("circle", {
+              cx: "50",
+              cy: "50",
+              r: "41",
+              stroke: "#C49A45",
+              strokeWidth: "0.8",
+              strokeDasharray: "3 3",
+              opacity: "0.65",
+            }),
+            [0, 72, 144, 216, 288].map((e) =>
+              (0, r.jsx)(
+                "path",
+                {
+                  d: "M50 48C30 32 34 14 46 19L50 24 54 19C66 14 70 32 50 48Z",
+                  fill: "#C49A45",
+                  opacity: "0.9",
+                  transform: `rotate(${e} 50 50)`,
+                },
+                e,
+              ),
+            ),
+            (0, r.jsx)("circle", {
+              cx: "50",
+              cy: "50",
+              r: "6",
+              fill: "#C49A45",
+            }),
+          ],
+        });
+      }
+      function m() {
+        return (0, r.jsxs)("svg", {
+          viewBox: "0 0 280 280",
+          className: "jp-card-enso-svg",
+          fill: "none",
+          "aria-hidden": "true",
+          children: [
+            (0, r.jsx)("defs", {
+              children: (0, r.jsxs)("radialGradient", {
+                id: "ensoGlow",
+                cx: "50%",
+                cy: "50%",
+                r: "50%",
+                children: [
+                  (0, r.jsx)("stop", {
+                    offset: "50%",
+                    stopColor: "#C62920",
+                    stopOpacity: "0.32",
+                  }),
+                  (0, r.jsx)("stop", {
+                    offset: "100%",
+                    stopColor: "#C62920",
+                    stopOpacity: "0",
+                  }),
+                ],
+              }),
+            }),
+            (0, r.jsx)("circle", {
+              cx: "140",
+              cy: "140",
+              r: "120",
+              fill: "url(#ensoGlow)",
+            }),
+            (0, r.jsx)("path", {
+              d: "M 140 24\n           C 204 24, 256 76, 256 140\n           C 256 204, 204 256, 140 256\n           C 76 256, 24 204, 24 140\n           C 24 84, 65 35, 122 25",
+              stroke: "#C62920",
+              strokeWidth: "19",
+              strokeLinecap: "round",
+              strokeLinejoin: "round",
+              opacity: "0.95",
+            }),
+            (0, r.jsx)("path", {
+              d: "M 136 30\n           C 194 32, 246 80, 246 140\n           C 246 200, 196 246, 140 246\n           C 84 246, 34 200, 34 140\n           C 34 90, 72 46, 116 34",
+              stroke: "#E8D9B5",
+              strokeWidth: "2.2",
+              strokeLinecap: "round",
+              opacity: "0.3",
+              strokeDasharray: "55 30 110 40",
+            }),
+          ],
+        });
+      }
+      function j() {
+        return (0, r.jsx)("svg", {
+          viewBox: "0 0 160 10",
+          className: "jp-card-red-stroke-svg",
+          fill: "none",
+          preserveAspectRatio: "none",
+          "aria-hidden": "true",
+          children: (0, r.jsx)("path", {
+            d: "M 4 6 \n           C 25 3, 55 4.5, 80 5.5 \n           C 110 6.5, 140 3.8, 156 5.5\n           C 142 8, 105 8.8, 75 8\n           C 48 7.2, 18 8.8, 4 6 Z",
+            fill: "#C62920",
+            opacity: "0.95",
+          }),
+        });
+      }
+      function g({
+        image: e,
+        portrait: a,
+        name: i,
+        role: t,
+        cardNumber: n,
+        index: u,
+        email: x,
+        github: v,
+        linkedin: b,
+        className: k = "",
+      }) {
+        let [N, f] = (0, s.useState)(!1),
+          w = e || a || "/pecfest-logo-display.webp",
+          y = void 0 !== n ? n : u,
+          C = void 0 !== y ? String(y).padStart(2, "0") : "01",
+          E = w.startsWith("http://") || w.startsWith("https://"),
+          W = [
+            x && {
+              href: `mailto:${x}`,
+              label: "Email",
+              icon: (0, r.jsx)(c.A, { size: 13, strokeWidth: 2 }),
+            },
+            v && {
+              href: v,
+              label: "GitHub",
+              icon: (0, r.jsx)(o, { size: 13 }),
+            },
+            b && {
+              href: b,
+              label: "LinkedIn",
+              icon: (0, r.jsx)(h, { size: 12 }),
+            },
+          ].filter(Boolean);
+        return (0, r.jsx)("article", {
+          className: `jp-card-container ${k}`,
+          onMouseEnter: () => f(!0),
+          onMouseLeave: () => f(!1),
+          tabIndex: 0,
+          role: "region",
+          "aria-label": `Developer profile card for ${i}`,
+          onFocus: () => f(!0),
+          onBlur: () => f(!1),
+          children: (0, r.jsxs)(l.P.div, {
+            className: "jp-card-body",
+            animate: { y: N ? -12 : 0 },
+            transition: { duration: 0.55, ease: [0.16, 1, 0.3, 1] },
+            children: [
+              (0, r.jsxs)("div", {
+                className: "jp-card-bg-layer",
+                "aria-hidden": "true",
+                children: [
+                  (0, r.jsx)(l.P.img, {
+                    src: "/locus_japanese_card_bg.jpg",
+                    alt: "",
+                    className: "jp-card-bg-img",
+                    animate: { scale: N ? 1.03 : 1 },
+                    transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] },
+                  }),
+                  (0, r.jsx)("div", { className: "jp-card-bg-scrim" }),
+                ],
+              }),
+              (0, r.jsx)("div", {
+                className: "jp-card-frame-border",
+                "aria-hidden": "true",
+              }),
+              (0, r.jsx)("div", {
+                className: "jp-card-corner jp-card-corner--tl",
+                "aria-hidden": "true",
+              }),
+              (0, r.jsx)("div", {
+                className: "jp-card-corner jp-card-corner--tr",
+                "aria-hidden": "true",
+              }),
+              (0, r.jsx)("div", {
+                className: "jp-card-corner jp-card-corner--bl",
+                "aria-hidden": "true",
+              }),
+              (0, r.jsx)("div", {
+                className: "jp-card-corner jp-card-corner--br",
+                "aria-hidden": "true",
+              }),
+              (0, r.jsxs)("header", {
+                className: "jp-card-header",
+                children: [
+                  (0, r.jsxs)("div", {
+                    className: "jp-card-brand",
+                    children: [
+                      (0, r.jsx)("span", {
+                        className: "jp-card-brand-kanji",
+                        "aria-hidden": "true",
+                        children: "創",
+                      }),
+                      (0, r.jsx)("div", {
+                        className: "jp-card-brand-labels",
+                        children: (0, r.jsx)("span", {
+                          className: "jp-card-brand-title",
+                          children: "PECFEST",
+                        }),
+                      }),
+                    ],
+                  }),
+                  (0, r.jsxs)("div", {
+                    className: "jp-card-num-box",
+                    children: [
+                      (0, r.jsx)("span", {
+                        className: "jp-card-num-prefix",
+                        children: "№",
+                      }),
+                      (0, r.jsx)("span", {
+                        className: "jp-card-num-val",
+                        children: C,
+                      }),
+                    ],
+                  }),
+                ],
+              }),
+              (0, r.jsxs)("div", {
+                className: "jp-card-header-divider",
+                "aria-hidden": "true",
+                children: [
+                  (0, r.jsx)("span", { className: "jp-card-divider-half" }),
+                  (0, r.jsx)("span", {
+                    className: "jp-card-divider-diamond",
+                    children: "◆",
+                  }),
+                  (0, r.jsx)("span", { className: "jp-card-divider-half" }),
+                ],
+              }),
+              (0, r.jsxs)("div", {
+                className: "jp-card-portrait-stage",
+                children: [
+                  (0, r.jsx)(l.P.div, {
+                    className: "jp-card-enso-layer",
+                    animate: { scale: N ? 1.05 : 1, rotate: 2 * !!N },
+                    transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] },
+                    children: (0, r.jsx)(m, {}),
+                  }),
+                  (0, r.jsx)("div", {
+                    className: "jp-card-hanko-seal",
+                    title: "PECFEST Authenticated",
+                    "aria-hidden": "true",
+                    children: (0, r.jsx)("span", { children: "匠" }),
+                  }),
+                  (0, r.jsx)(l.P.div, {
+                    className: "jp-card-photo-wrapper",
+                    animate: { y: N ? -5 : 0 },
+                    transition: { duration: 0.55, ease: [0.16, 1, 0.3, 1] },
+                    children: (0, r.jsxs)("div", {
+                      className: "jp-card-photo-frame",
+                      children: [
+                        (0, r.jsx)(d.default, {
+                          src: w,
+                          alt: i,
+                          fill: !0,
+                          sizes: "(max-width: 640px) 210px, 240px",
+                          className: "jp-card-photo",
+                          priority: void 0 !== y && 2 >= Number(y),
+                          unoptimized: E,
+                        }),
+                        (0, r.jsx)("div", {
+                          className: "jp-card-photo-fade",
+                          "aria-hidden": "true",
+                        }),
+                      ],
+                    }),
+                  }),
+                ],
+              }),
+              (0, r.jsxs)("footer", {
+                className: "jp-card-info",
+                children: [
+                  (0, r.jsx)("div", {
+                    className: "jp-card-role-box",
+                    children: (0, r.jsx)("span", {
+                      className: "jp-card-role-tag",
+                      children: t,
+                    }),
+                  }),
+                  (0, r.jsx)("h3", { className: "jp-card-name", children: i }),
+                  (0, r.jsx)("div", {
+                    className: "jp-card-brushstroke-wrap",
+                    "aria-hidden": "true",
+                    children: (0, r.jsx)(j, {}),
+                  }),
+                  (0, r.jsxs)("div", {
+                    className: "jp-card-footer-bar",
+                    children: [
+                      (0, r.jsx)("div", {
+                        className: "jp-card-emblem-wrap",
+                        title: "PECFEST Syndicate",
+                        children: (0, r.jsx)(p, {}),
+                      }),
+                      W.length > 0 &&
+                        (0, r.jsx)("div", {
+                          className: "jp-card-socials",
+                          "aria-label": "Contact channels",
+                          children: W.map((e) =>
+                            (0, r.jsx)(
+                              "a",
+                              {
+                                href: e.href,
+                                target: e.href.startsWith("mailto:")
+                                  ? void 0
+                                  : "_blank",
+                                rel: e.href.startsWith("mailto:")
+                                  ? void 0
+                                  : "noopener noreferrer",
+                                className: "jp-card-social-link",
+                                "aria-label": `${e.label} of ${i}`,
+                                onClick: (e) => e.stopPropagation(),
+                                children: e.icon,
+                              },
+                              e.label,
+                            ),
+                          ),
+                        }),
+                    ],
+                  }),
+                ],
+              }),
+            ],
+          }),
+        });
+      }
+      i(38979);
+      let u = [
+        {
+          id: "karrtik-gupta",
+          name: "Karrtik Gupta",
+          role: "Website Head",
+          portrait: "/developers/karrtik-gupta.jpg",
+          index: 1,
+          email: "karrtikgupta9@gmail.com",
+          github: "https://github.com/mygithubkg",
+          linkedin: "https://www.linkedin.com/in/karrtik-gupta/",
+          category: "leads",
+        },
+        {
+          id: "akshat-gupta",
+          name: "Akshat Gupta",
+          role: "Website Head",
+          portrait: "/developers/akshatgupta.jpeg",
+          index: 2,
+          email: "akshatgupta1673@gmail.com",
+          linkedin: "https://www.linkedin.com/in/akshat-gupta-b0781827a/",
+          category: "leads",
+        },
+        {
+          id: "shreyas-vij",
+          name: "Shreyas Vij",
+          role: "Website Joint Head",
+          portrait: "/developers/shreyas-vij.jpeg",
+          index: 3,
+          email: "shrvij28@gmail.com",
+          github: "https://github.com/ShreyasVij",
+          linkedin: "https://www.linkedin.com/in/shreyas-vij-07b541328",
+          category: "core",
+        },
+        {
+          id: "vedant-angra",
+          name: "Vedant Angra",
+          role: "Website Joint Head",
+          portrait: "/developers/vedant-angra.jpeg",
+          index: 4,
+          email: "angravedant@gmail.com",
+          github: "https://github.com/Vedant1816",
+          linkedin: "https://www.linkedin.com/in/vedant-angra07",
+          category: "core",
+        },
+        {
+          id: "vishupal-goyal",
+          name: "Vishupal Goyal",
+          role: "Website Joint Head",
+          portrait: "/developers/vishupal-goyal.png",
+          index: 5,
+          email: "vishupal24goyal@gmail.com",
+          github: "https://github.com/Vishupal-24",
+          linkedin: "https://www.linkedin.com/in/vishupal-goyal-b44a57349/",
+          category: "core",
+        },
+        {
+          id: "mahesh-aggarwal",
+          name: "Mahesh Aggarwal",
+          role: "Website Joint Head",
+          portrait: "/developers/mahesh-aggarwal.jpg",
+          index: 6,
+          email: "developermahesh21@gmail.com",
+          github: "https://github.com/maheshaggarwal21",
+          linkedin: "https://www.linkedin.com/in/mahesh-aggarwal-11829a319",
+          category: "core",
+        },
+        {
+          id: "sanchit-kumar-mishra",
+          name: "Sanchit Kumar Mishra",
+          role: "Website Joint Head",
+          portrait: "/developers/sanchit-kumar-mishra.png",
+          index: 7,
+          email: "sanchitkumarmishra93@gmail.com",
+          github: "https://github.com/SanchitKumarMishra",
+          linkedin: "https://linkedin.com/in/sanchit-kumar-mishra-868650329",
+          category: "core",
+        },
+        {
+          id: "rudra-pratap-singh",
+          name: "Rudra Pratap Singh",
+          role: "Website Joint Head",
+          portrait: "/developers/rudra-pratap-singh-.jpg",
+          index: 8,
+          email: "anshurudra1311@gmail.com",
+          github: "https://github.com/timcooked",
+          linkedin: "https://www.linkedin.com/in/rudra-pratap-singh-806857313",
+          category: "core",
+        },
+      ];
+      function x() {
+        let e = u.filter(
+            (e) => "Website Head" === e.role || "leads" === e.category,
+          ),
+          a = u.filter(
+            (e) => "Website Head" !== e.role && "leads" !== e.category,
+          );
+        return (0, r.jsxs)("main", {
+          className: "fullscreen-page-overlay dev-page-root",
+          children: [
+            (0, r.jsx)("div", {
+              className: "fullscreen-page-ambience",
+              "aria-hidden": "true",
+            }),
+            (0, r.jsx)("div", {
+              className: "dev-ambient-glow dev-ambient-glow--top",
+              "aria-hidden": "true",
+            }),
+            (0, r.jsx)("div", {
+              className: "dev-ambient-glow dev-ambient-glow--bottom",
+              "aria-hidden": "true",
+            }),
+            (0, r.jsx)("span", {
+              className: "dev-page-watermark",
+              "aria-hidden": "true",
+              children: "匠",
+            }),
+            (0, r.jsx)("div", {
+              className: "dev-page-rail dev-page-rail--left",
+              "aria-hidden": "true",
+            }),
+            (0, r.jsx)("div", {
+              className: "dev-page-rail dev-page-rail--right",
+              "aria-hidden": "true",
+            }),
+            (0, r.jsx)(t.FestivalNavbar, {}),
+            (0, r.jsxs)("section", {
+              className: "fullscreen-page-scroll",
+              children: [
+                (0, r.jsxs)("div", {
+                  className: "dev-page-container",
+                  children: [
+                    (0, r.jsx)("header", {
+                      className: "dev-page-hero",
+                      children: (0, r.jsxs)("h1", {
+                        className: "dev-page-title pt-8",
+                        children: [
+                          "Developers of ",
+                          (0, r.jsx)("em", { children: "This Site" }),
+                        ],
+                      }),
+                    }),
+                    (0, r.jsxs)("div", {
+                      className: "dev-page-grid-wrapper",
+                      children: [
+                        e.length > 0 &&
+                          (0, r.jsx)("div", {
+                            className: "dev-head-section",
+                            children: e.map((e) =>
+                              (0, r.jsx)(
+                                g,
+                                {
+                                  cardNumber: e.index,
+                                  name: e.name,
+                                  role: e.role,
+                                  image: e.portrait,
+                                  email: e.email,
+                                  github: e.github,
+                                  linkedin: e.linkedin,
+                                },
+                                e.id,
+                              ),
+                            ),
+                          }),
+                        a.length > 0 &&
+                          (0, r.jsx)("div", {
+                            className: "dev-joint-section",
+                            children: a.map((e) =>
+                              (0, r.jsx)(
+                                g,
+                                {
+                                  cardNumber: e.index,
+                                  name: e.name,
+                                  role: e.role,
+                                  image: e.portrait,
+                                  email: e.email,
+                                  github: e.github,
+                                  linkedin: e.linkedin,
+                                },
+                                e.id,
+                              ),
+                            ),
+                          }),
+                      ],
+                    }),
+                  ],
+                }),
+                (0, r.jsx)(n.q, {}),
+              ],
+            }),
+          ],
+        });
+      }
+      i(46492);
+    },
+    30827: (e, a, i) => {
+      "use strict";
+      i.d(a, { q: () => n });
+      var r = i(95155),
+        s = i(98500),
+        t = i.n(s);
+      function n() {
+        return (0, r.jsxs)("footer", {
+          className: "site-footer",
+          style: { marginTop: "auto" },
+          children: [
+            (0, r.jsxs)(t(), {
+              href: "/",
+              className: "footer-brand",
+              children: ["PECFEST ", (0, r.jsx)("span", { children: "2026" })],
+            }),
+            (0, r.jsx)("p", {
+              children: "Made of curiosity. Built on belonging.",
+            }),
+            (0, r.jsxs)("div", {
+              children: [
+                (0, r.jsx)(t(), { href: "/events", children: "Events" }),
+                (0, r.jsx)(t(), { href: "/calendar", children: "Schedule" }),
+                (0, r.jsx)(t(), { href: "/contact", children: "Contact" }),
+                (0, r.jsx)(t(), { href: "/about", children: "About Us" }),
+              ],
+            }),
+            (0, r.jsxs)("div", {
+              className: "footer-bottom",
+              children: [
+                (0, r.jsx)("span", {
+                  children: "\xa9 2026 PECFEST \xb7 PUNJAB ENGINEERING COLLEGE",
+                }),
+                (0, r.jsx)(t(), { href: "/", children: "Back to the gate ↑" }),
+              ],
+            }),
+          ],
+        });
+      }
+    },
+    38979: () => {},
+    46492: () => {},
+    92557: (e, a, i) => {
+      Promise.resolve().then(i.bind(i, 13011));
+    },
+  },
+  (e) => {
+    (e.O(0, [4794, 8500, 4987, 5196, 9336, 4388, 8441, 3794, 7358], () =>
+      e((e.s = 92557)),
+    ),
+      (_N_E = e.O()));
+  },
+]);

@@ -1,0 +1,189 @@
+{
+  "capturedAt": "2026-11-06T16:40:00.000Z",
+  "counts": {
+    "all": 4,
+    "civic": 1,
+    "Civic & Enterprise Tech": 1,
+    "verification": 1,
+    "Verification & Talent": 1,
+    "productivity": 1,
+    "Productivity & Social": 1,
+    "edtech": 1,
+    "Career & EdTech": 1
+  },
+  "categories": {
+    "all": [
+      "civora",
+      "pramaan",
+      "dailytrack",
+      "skillgap"
+    ],
+    "civic": [
+      "civora"
+    ],
+    "Civic & Enterprise Tech": [
+      "civora"
+    ],
+    "verification": [
+      "pramaan"
+    ],
+    "Verification & Talent": [
+      "pramaan"
+    ],
+    "productivity": [
+      "dailytrack"
+    ],
+    "Productivity & Social": [
+      "dailytrack"
+    ],
+    "edtech": [
+      "skillgap"
+    ],
+    "Career & EdTech": [
+      "skillgap"
+    ]
+  },
+  "events": [
+    {
+      "id": "civora",
+      "event_id": "civora",
+      "name": "Civora",
+      "event_name": "Civora",
+      "tagline": "Enterprise-Grade Civic Issue Reporting & Public Accountability Platform",
+      "category": "Civic & Enterprise Tech",
+      "track": "civic",
+      "society_name": "Enterprise Civic Architecture",
+      "additional_club": "GIS · Gemini AI · Supabase",
+      "liveUrl": "https://civora-tau.vercel.app/",
+      "githubUrl": "https://github.com/moosa-developer/civora",
+      "summary": "Establishes a direct, transparent, and auditable bridge between Citizens, Government Officials, Civic Contractors, and Administrators by digitizing the entire municipal resolution pipeline.",
+      "description": "Civora connects the full municipal issue lifecycle—photographic field reporting, departmental triage, SLA tracking, municipal tendering, contractor milestone verification, and defect liability management—ensuring verifiable public service delivery.",
+      "brief_description": "Establishes a direct, transparent, and auditable bridge between Citizens, Government Officials, Civic Contractors, and Administrators by digitizing the entire municipal resolution pipeline. Civora connects the full municipal issue lifecycle—photographic field reporting, departmental triage, SLA tracking, municipal tendering, contractor milestone verification, and defect liability management—ensuring verifiable public service delivery.",
+      "techStack": {
+        "frontend": "React 19.2, Vite 8.3, TypeScript 6.0, Tailwind CSS 4.3, Leaflet 1.9 (GIS)",
+        "backend": "Node.js (v22), Express.js 4.21, Prisma ORM 6.19",
+        "database": "PostgreSQL / Supabase 15+ (Connection Pooling)",
+        "ai_vision": "Google Gemini API (@google/genai 2.32) for multimodal triage/fraud analysis; Custom dHash (Hamming distance) & SHA-256 for perceptual deduplication",
+        "security": "JWT & BcryptJS dual auth, Zod 4.6 runtime validation, Multer 2.4",
+        "hosting": "Vercel (Edge CDN Frontend) + Render (Cloud Backend)"
+      },
+      "features": [
+        "Photographic issue capture with interactive Leaflet municipal GIS mapping",
+        "Multimodal Gemini AI complaint triage, relevance validation, and automated fraud scoring",
+        "Perceptual dHash image deduplication to eliminate duplicate citizen reports",
+        "End-to-end municipal pipeline: SLA tracking, tendering, contractor milestones, and defect liability"
+      ],
+      "image_url": "/art/fans/technical.webp",
+      "image_key": "art/fans/technical.webp",
+      "is_active": true,
+      "in_top_10": true,
+      "image": "/projects/covers/civora.webp",
+      "image_large": "/projects/covers/civora.webp"
+    },
+    {
+      "id": "pramaan",
+      "event_id": "pramaan",
+      "name": "PRAMAAN",
+      "event_name": "PRAMAAN",
+      "tagline": "Evidence-Backed Skill Profiles & Hackathon Team Matchmaking",
+      "category": "Verification & Talent",
+      "track": "verification",
+      "society_name": "Verification & Talent Matching",
+      "additional_club": "Gemini AI · Cookies Auth · Leaflet",
+      "liveUrl": "https://pramaan-verify.vercel.app/",
+      "githubUrl": "https://github.com/moosa-developer/pramaan",
+      "summary": "Transforms self-reported technical claims into verified, evidence-backed developer profiles while helping hackathon teams assemble complementary skill sets.",
+      "description": "PRAMAAN eliminates unverified claims in developer portfolios and hackathon team formations. Authentication is intentionally replaced by secure, scoped HTTP-only browser cookie profile switching, avoiding heavyweight login hurdles for rapid participant matchmaking.",
+      "brief_description": "Transforms self-reported technical claims into verified, evidence-backed developer profiles while helping hackathon teams assemble complementary skill sets. PRAMAAN eliminates unverified claims in developer portfolios and hackathon team formations. Authentication is intentionally replaced by secure, scoped HTTP-only browser cookie profile switching, avoiding heavyweight login hurdles for rapid participant matchmaking.",
+      "techStack": {
+        "frontend": "React 19, Vite 8, TypeScript, Tailwind CSS 4, Leaflet GIS",
+        "backend": "Node.js (v22), Express.js 4.21",
+        "database": "MongoDB (Mongoose ODM)",
+        "ai_vision": "Google Gemini API integration & automated profile validation logic",
+        "security": "Secure HTTP-only session cookie management and Zod schema sanitization",
+        "hosting": "Vercel (Frontend SPA) + Render (Backend Web Service)"
+      },
+      "features": [
+        "Evidence-backed skill verification converting raw claims into proof artifacts",
+        "Smart algorithmic matchmaking for hackathon squads needing complementary tech stacks",
+        "Zero-friction profile handling via lightweight secure HTTP-only browser cookies",
+        "Interactive profile discovery and direct team builder explorer"
+      ],
+      "image_url": "/art/fans/literary.webp",
+      "image_key": "art/fans/literary.webp",
+      "is_active": true,
+      "in_top_10": true,
+      "image": "/projects/covers/pramaan.webp",
+      "image_large": "/projects/covers/pramaan.webp"
+    },
+    {
+      "id": "dailytrack",
+      "event_id": "dailytrack",
+      "name": "DailyTrack",
+      "event_name": "DailyTrack",
+      "tagline": "Modern Habit & Collaborative Task Management Platform",
+      "category": "Productivity & Social",
+      "track": "productivity",
+      "society_name": "Productivity & Accountability Engine",
+      "additional_club": "React 19 · JWT · MongoDB Atlas",
+      "liveUrl": "https://dailytrack4bros.vercel.app/",
+      "githubUrl": "https://github.com/moosa-developer/dailytrack",
+      "summary": "Streamlines daily engineering routines, sustains accountability streaks, and enables real-time social task collaboration.",
+      "description": "A high-performance productivity workspace engineered to balance granular task execution with social accountability. Supports daily habit streaks, collaborative workspaces, and real-time activity monitoring for teams and accountability partners.",
+      "brief_description": "Streamlines daily engineering routines, sustains accountability streaks, and enables real-time social task collaboration. A high-performance productivity workspace engineered to balance granular task execution with social accountability. Supports daily habit streaks, collaborative workspaces, and real-time activity monitoring for teams and accountability partners.",
+      "techStack": {
+        "frontend": "React 19, React Router v7, Vite 8, Tailwind CSS v4",
+        "backend": "Node.js, Express.js 4, Mongoose 8",
+        "database": "MongoDB Atlas",
+        "security": "Stateless JWT Bearer Token Authentication, Bcrypt password hashing",
+        "hosting": "Vercel (Frontend SPA) + Render (Backend Managed Web Service)"
+      },
+      "features": [
+        "Dynamic habit streak engine with automated daily reset and accountability tracking",
+        "Shared collaborative workspaces for team task delegation and milestone sync",
+        "Stateless JWT-authenticated session security with hashed credential stores",
+        "Responsive React 19 UI with fluid micro-interactions and low-latency state updates"
+      ],
+      "image_url": "/art/fans/gaming.webp",
+      "image_key": "art/fans/gaming.webp",
+      "is_active": true,
+      "in_top_10": true,
+      "image": "/projects/covers/dailytrack.webp",
+      "image_large": "/projects/covers/dailytrack.webp"
+    },
+    {
+      "id": "skillgap",
+      "event_id": "skillgap",
+      "name": "SkillGap",
+      "event_name": "SkillGap",
+      "tagline": "Smart Technical Competency Matching & Gap Analysis Platform",
+      "category": "Career & EdTech",
+      "track": "edtech",
+      "society_name": "Competency Mapping & EdTech",
+      "additional_club": "Node.js · Express · MongoDB",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/moosa-developer/skillgap",
+      "summary": "Analyzes target engineering roles, identifies missing technical competencies, and generates actionable roadmaps to bridge skill voids.",
+      "description": "A dedicated career-readiness tool designed to map a developer's current skill repertoire against real-world job specifications and industry benchmarks, pinpointing exact knowledge gaps with tailored learning directives.",
+      "brief_description": "Analyzes target engineering roles, identifies missing technical competencies, and generates actionable roadmaps to bridge skill voids. A dedicated career-readiness tool designed to map a developer's current skill repertoire against real-world job specifications and industry benchmarks, pinpointing exact knowledge gaps with tailored learning directives.",
+      "techStack": {
+        "frontend": "HTML5, CSS3, Modern JavaScript (DOM manipulation & async API consumption)",
+        "backend": "Node.js, Express.js",
+        "database": "MongoDB (Competency models & role curriculum schemas)",
+        "hosting": "Node.js Web Server / Cloud Deployment"
+      },
+      "features": [
+        "Role-based curriculum and requirement parsing across modern tech stacks",
+        "Automated skill matrix differential analysis highlighting priority gaps",
+        "Curated learning recommendations tailored to missing frameworks and tools",
+        "Lightweight, dependency-free vanilla frontend delivering fast client rendering"
+      ],
+      "image_url": "/art/fans/performing.webp",
+      "image_key": "art/fans/performing.webp",
+      "is_active": true,
+      "in_top_10": true,
+      "image": "/projects/covers/skillgap.webp",
+      "image_large": "/projects/covers/skillgap.webp"
+    }
+  ]
+}

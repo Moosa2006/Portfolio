@@ -1,0 +1,2502 @@
+(self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
+  [7188],
+  {
+    20851: (e, t, r) => {
+      Promise.resolve().then(r.bind(r, 38126));
+    },
+    24800: (e, t, r) => {
+      "use strict";
+      r.d(t, { JB: () => l, Z5: () => o, s_: () => i, w: () => c });
+      let a = { enabled: !0, status: "waiting" },
+        n = a,
+        s = new Set(),
+        i = () => n,
+        o = () => a;
+      function l(e, t) {
+        (n.enabled !== e || n.status !== t) &&
+          ((n = { enabled: e, status: t }), s.forEach((e) => e()));
+      }
+      function c(e) {
+        return (
+          s.add(e),
+          () => {
+            s.delete(e);
+          }
+        );
+      }
+    },
+    30188: (e, t, r) => {
+      "use strict";
+      r.d(t, { F: () => n, r: () => a });
+      let a = [
+          {
+            id: "star-night",
+            title: "The Starry Night Mirage",
+            category: "Matsuri Concerts",
+            edition: "2025",
+            description:
+              "Over 15,000 students united under the amphitheatre spotlight.",
+          },
+          {
+            id: "bhangra-beat",
+            title: "Virasat: Folk Majesty",
+            category: "Cultural Showcase",
+            edition: "2025",
+            description:
+              "Thunderous Dhol beats echoing across the centenary campus.",
+          },
+          {
+            id: "robowars",
+            title: "Steel & Spark Arena",
+            category: "Technical Battles",
+            edition: "2025",
+            description:
+              "Heavyweight combat bots clashing in the subterranean arena.",
+          },
+          {
+            id: "rangmanch",
+            title: "Rangmanch: Street Odyssey",
+            category: "Dramatic Arts",
+            edition: "2025",
+            description:
+              "Potent theatrical performances stirring minds and hearts.",
+          },
+          {
+            id: "glitz",
+            title: "Haute Couture Runway",
+            category: "Fashion & Style",
+            edition: "2025",
+            description:
+              "Avant-garde styling fusing traditional heritage with high fashion.",
+          },
+          {
+            id: "drone-show",
+            title: "Constellations of Mikado",
+            category: "Visual Spectacle",
+            edition: "2026 Preview",
+            description:
+              "Synchronized light arrays illuminating the night sky.",
+          },
+        ],
+        n = {
+          address:
+            "Punjab Engineering College (Deemed to be University), Sector 12, Chandigarh, 160012",
+          email: "marketing.pecfest@pec.edu.in",
+          instagram: "@pec.pecfest",
+          instagramUrl: "https://www.instagram.com/pec.pecfest/",
+          mapsUrl: "https://maps.app.goo.gl/wgYE4wBdCbNSV6gd9",
+          emergencyDesk: "+91 (0172) 275-3051",
+          helpline: "+91 (0172) 275-3055",
+        };
+    },
+    35532: (e, t, r) => {
+      "use strict";
+      r.d(t, {
+        EZ: () => u,
+        Gd: () => d,
+        J6: () => h,
+        LE: () => l,
+        Pm: () => n,
+        RY: () => o,
+        Z7: () => c,
+        iB: () => a,
+        ir: () => s,
+        qs: () => i,
+        tj: () => p,
+        wP: () => m,
+      });
+      let a = [
+          {
+            id: "paths",
+            href: "/events",
+            title: "EVENTS",
+            subtitle: "THE FIVE PATHS",
+            mark: "01",
+          },
+          {
+            id: "schedule",
+            href: "/calendar",
+            title: "CALENDAR",
+            subtitle: "THE PROGRAMME",
+            mark: "02",
+          },
+          {
+            id: "sponsors",
+            href: "/sponsors",
+            title: "SPONSORS",
+            subtitle: "PATRONS OF THE REALM",
+            mark: "03",
+          },
+          {
+            id: "committee",
+            href: "/committees/map",
+            title: "COMMITTEE",
+            subtitle: "GUARDIANS OF THE MIKADO",
+            mark: "04",
+          },
+          {
+            id: "developers",
+            href: "/developer",
+            title: "DEVELOPERS",
+            subtitle: "ARCHITECTS OF THE REALM",
+            mark: "05",
+          },
+          {
+            id: "gallery",
+            href: "/gallery",
+            title: "GALLERY",
+            subtitle: "FESTIVAL CHRONICLES",
+            mark: "06",
+          },
+          {
+            id: "contact",
+            href: "/contact",
+            title: "CONTACT",
+            subtitle: "THE IMPERIAL COURIER",
+            mark: "07",
+          },
+        ],
+        n = 0.56,
+        s = 0.93,
+        i = 0.985,
+        o = 9,
+        l = 6.28,
+        c = -39;
+      function d(e) {
+        return ((e + 1) * Math.PI * 2) / a.length;
+      }
+      function u(e) {
+        return n + (e / (a.length - 1)) * (0.92 - n);
+      }
+      function h(e) {
+        return Math.max(
+          0,
+          Math.min(
+            a.length - 1,
+            Math.round(((e - n) / (0.92 - n)) * (a.length - 1)),
+          ),
+        );
+      }
+      function m(e, t) {
+        return Math.atan2(Math.sin(t - e), Math.cos(t - e));
+      }
+      let p = [
+        {
+          label: "The threshold",
+          detail: "A quieter world begins here.",
+          progress: 0,
+        },
+        {
+          label: "The ascent",
+          detail: "Follow the lanterns. Leave the ordinary.",
+          progress: 0.25,
+        },
+        {
+          label: "The sanctuary",
+          detail: "Every door opens a different world.",
+          progress: 0.56,
+        },
+        {
+          label: "The hidden falls",
+          detail: "Beyond the shrine, a story unfolds.",
+          progress: 1,
+        },
+      ];
+    },
+    38126: (e, t, r) => {
+      "use strict";
+      r.d(t, { default: () => W });
+      var a = r(95155),
+        n = r(12115);
+      let s = "(prefers-reduced-motion: reduce)";
+      function i(e) {
+        let t = window.matchMedia(s);
+        return (
+          t.addEventListener("change", e),
+          () => t.removeEventListener("change", e)
+        );
+      }
+      var o = r(68379),
+        l = r(45911),
+        c = r(97650);
+      let d = new Set(),
+        u = {
+          pending: 0,
+          totalFiles: 0,
+          fraction: 0,
+          activity: "Opening the gates",
+          revision: 0,
+        },
+        h = null;
+      function m(e) {
+        let t = e.split("?")[0].toLowerCase();
+        return /\.(glb|gltf)$/.test(t)
+          ? 6
+          : t.endsWith(".hdr")
+            ? 4
+            : t.endsWith(".wasm")
+              ? 2
+              : 1;
+      }
+      function p(e) {
+        if (!h) {
+          let e = c.h_9,
+            t = e.itemStart,
+            r = e.itemEnd,
+            a = [],
+            n = 0,
+            s = 0,
+            i = () => {
+              let e;
+              ((u = {
+                ...u,
+                pending: a.length,
+                fraction: n ? s / n : 0,
+                activity: a.length
+                  ? (e = a[a.length - 1].toLowerCase()).includes("cherry")
+                    ? "Loading the cherry blossoms"
+                    : e.includes("cedar")
+                      ? "Loading the cedar forest"
+                      : e.includes(".hdr")
+                        ? "Loading the forest sky"
+                        : e.includes("draco") || e.includes(".wasm")
+                          ? "Preparing the 3D decoder"
+                          : e.includes("/materials/")
+                            ? "Laying the stone and wood"
+                            : e.includes("waterfall")
+                              ? "Loading the waterfall"
+                              : e.includes("logo")
+                                ? "Raising the festival crest"
+                                : "Loading textures"
+                  : "Polishing the sanctuary",
+                revision: u.revision + 1,
+              }),
+                d.forEach((e) => e(u)));
+            },
+            o = (e) => {
+              (t(e),
+                a.push(e),
+                (n += m(e)),
+                (u = { ...u, totalFiles: u.totalFiles + 1 }),
+                i());
+            },
+            l = (e) => {
+              r(e);
+              let t = a.indexOf(e);
+              (-1 !== t && (a.splice(t, 1), (s += m(e))), i());
+            };
+          ((e.itemStart = o),
+            (e.itemEnd = l),
+            (h = () => {
+              (e.itemStart === o && (e.itemStart = t),
+                e.itemEnd === l && (e.itemEnd = r),
+                (u = {
+                  pending: 0,
+                  totalFiles: 0,
+                  fraction: 0,
+                  activity: "Opening the gates",
+                  revision: 0,
+                }));
+            }));
+        }
+        return (
+          d.add(e),
+          e(u),
+          () => {
+            (d.delete(e), d.size || (h?.(), (h = null)));
+          }
+        );
+      }
+      var g = r(52228),
+        f = r(57295);
+      function v({
+        ready: e,
+        failed: t,
+        reduced: r,
+        onComplete: s,
+        onReveal: i,
+      }) {
+        let o = (0, n.useRef)(null),
+          c = (0, n.useRef)(null),
+          d = (0, n.useRef)(null),
+          u = (0, n.useRef)(null),
+          h = (0, n.useRef)(null),
+          m = (0, n.useRef)(!1),
+          y = (0, n.useRef)(!1),
+          x = (0, n.useRef)(e),
+          w = (0, n.useRef)(t),
+          E = (0, n.useRef)(0),
+          b = (0, n.useRef)(0),
+          j = (0, n.useRef)(0),
+          k = (0, n.useRef)(0),
+          [S, N] = (0, n.useState)("Opening the gates"),
+          [T, A] = (0, n.useState)(!1);
+        ((0, n.useEffect)(() => {
+          ((x.current = e), e && (k.current = performance.now()));
+        }, [e]),
+          (0, n.useEffect)(() => {
+            w.current = t;
+          }, [t]));
+        let C = (0, n.useCallback)(() => {
+          m.current || ((m.current = !0), s());
+        }, [s]);
+        ((0, n.useEffect)(
+          () =>
+            p((e) => {
+              ((E.current = e.fraction),
+                (b.current = e.pending),
+                (j.current = e.totalFiles),
+                (k.current = performance.now()),
+                N(e.activity));
+            }),
+          [],
+        ),
+          (0, n.useEffect)(() => {
+            let e = 0,
+              t = 0,
+              a = -1,
+              n = !1,
+              s = () => {
+                let i = performance.now();
+                if (!n) {
+                  let e = i - k.current,
+                    t =
+                      x.current &&
+                      0 === b.current &&
+                      e > (j.current ? 400 : 1500),
+                    r = x.current && e > 2e4;
+                  n = w.current || t || r;
+                }
+                let o = n ? 100 : Math.min(95, 100 * E.current),
+                  l = r ? o : t + (o - t) * 0.12,
+                  c = Math.floor((t = Math.max(t, o - l < 0.5 ? o : l)));
+                (c !== a &&
+                  ((a = c),
+                  d.current && (d.current.textContent = String(c)),
+                  u.current && (u.current.style.width = `${c}%`),
+                  h.current?.setAttribute("aria-valuenow", String(c))),
+                c >= 100)
+                  ? A(!0)
+                  : (e = requestAnimationFrame(s));
+              };
+            return (
+              (e = requestAnimationFrame(s)),
+              () => cancelAnimationFrame(e)
+            );
+          }, [r]));
+        let M = (0, n.useCallback)(() => {
+          y.current ||
+            ((y.current = !0),
+            i?.(),
+            (c.current = l.Ay.to(o.current, {
+              opacity: 0,
+              duration: r ? 0.15 : 0.55,
+              ease: "power2.out",
+              onComplete: C,
+            })));
+        }, [r, C, i]);
+        return (
+          (0, n.useEffect)(
+            () => () => {
+              c.current?.kill();
+            },
+            [],
+          ),
+          (0, n.useEffect)(() => {
+            if (!T || y.current) return;
+            let e = setTimeout(M, 150);
+            return () => clearTimeout(e);
+          }, [T, M]),
+          (0, a.jsxs)("div", {
+            className: "preloader",
+            ref: o,
+            "data-route-loading": "true",
+            children: [
+              (0, a.jsxs)("div", {
+                className: "preloader-stage",
+                children: [
+                  (0, a.jsx)("div", {
+                    className: "preloader-ambient-glow",
+                    "aria-hidden": "true",
+                  }),
+                  (0, a.jsxs)("div", {
+                    className: "preloader-content",
+                    children: [
+                      (0, a.jsxs)("div", {
+                        className: "preloader-logo-wrap",
+                        children: [
+                          (0, a.jsx)("div", {
+                            className: "preloader-logo-ambient",
+                            "aria-hidden": "true",
+                          }),
+                          (0, a.jsx)("picture", {
+                            style: { display: "block", maxWidth: "100%" },
+                            children: (0, a.jsx)("img", {
+                              src: (0, g.sU)("/pecfest-logo-display.webp"),
+                              srcSet: (0, g.gJ)(
+                                "/pecfest-logo-display.webp",
+                                [380, 760],
+                              ),
+                              sizes: "(max-width: 768px) 280px, 380px",
+                              alt: "PECFEST 2026 - A Mystic Mikado",
+                              className: "preloader-logo-img",
+                              width: 320,
+                              height: 278,
+                              style: {
+                                width: "clamp(200px, 26vw, 320px)",
+                                height: "auto",
+                                maxWidth: "100%",
+                                objectFit: "contain",
+                              },
+                              fetchPriority: "high",
+                              decoding: "async",
+                            }),
+                          }),
+                        ],
+                      }),
+                      (0, a.jsxs)("div", {
+                        className: "preloader-meta",
+                        children: [
+                          (0, a.jsxs)("div", {
+                            className: "preloader-counter",
+                            "aria-hidden": "true",
+                            children: [
+                              (0, a.jsx)("span", {
+                                className: "preloader-counter-num",
+                                ref: d,
+                                children: "0",
+                              }),
+                              (0, a.jsx)("span", {
+                                className: "preloader-counter-pct",
+                                children: "%",
+                              }),
+                            ],
+                          }),
+                          (0, a.jsx)("div", {
+                            className: "preloader-bar-track",
+                            ref: h,
+                            role: "progressbar",
+                            "aria-label": "Loading the festival",
+                            "aria-valuemin": 0,
+                            "aria-valuemax": 100,
+                            "aria-valuenow": 0,
+                            children: (0, a.jsx)("div", {
+                              className: "preloader-bar-fill",
+                              ref: u,
+                              style: { width: "0%" },
+                            }),
+                          }),
+                          (0, a.jsxs)("div", {
+                            className: "preloader-status",
+                            children: [
+                              (0, a.jsx)("span", {
+                                className: "preloader-status-sub",
+                                children: "A MYSTIC MIKADO \xb7 PECFEST 2026",
+                              }),
+                              (0, a.jsx)("span", {
+                                className: "preloader-status-main",
+                                "aria-live": "polite",
+                                children: T ? "Welcome to the Realm" : S,
+                              }),
+                            ],
+                          }),
+                        ],
+                      }),
+                    ],
+                  }),
+                ],
+              }),
+              (0, a.jsx)("button", {
+                type: "button",
+                className: "preloader-skip",
+                onClick: C,
+                children: "Skip intro ↗",
+              }),
+              (0, a.jsx)("div", {
+                className: "preloader-sound-btn",
+                children: (0, a.jsx)(f.y, {}),
+              }),
+            ],
+          })
+        );
+      }
+      function y({ title: e, onClose: t, children: r }) {
+        let s = (0, n.useRef)(null);
+        return (
+          (0, n.useEffect)(() => {
+            let e = s.current,
+              t = document.activeElement;
+            return (
+              e?.showModal(),
+              () => {
+                (e?.close(), t?.focus({ preventScroll: !0 }));
+              }
+            );
+          }, []),
+          (0, a.jsx)("dialog", {
+            ref: s,
+            className: "detail-dialog",
+            "aria-labelledby": "dialog-title",
+            "data-lenis-prevent": !0,
+            onCancel: t,
+            onClick: (e) => {
+              e.target === e.currentTarget && t();
+            },
+            children: (0, a.jsxs)("div", {
+              className: "dialog-content",
+              children: [
+                (0, a.jsx)("button", {
+                  className: "dialog-close",
+                  onClick: t,
+                  "aria-label": "Close dialog",
+                  children: "\xd7",
+                }),
+                (0, a.jsx)("p", {
+                  className: "eyebrow",
+                  children: "PECFEST 2026 \xb7 A MYSTIC MIKADO",
+                }),
+                (0, a.jsx)("h2", { id: "dialog-title", children: e }),
+                r,
+              ],
+            }),
+          })
+        );
+      }
+      var x = r(74921),
+        w = r(35532);
+      function E({ paused: e }) {
+        let t = (0, n.useRef)(null);
+        return (
+          (0, n.useEffect)(
+            () =>
+              (0, x.k9)(() => {
+                t.current &&
+                  (t.current.style.setProperty(
+                    "--world-scale",
+                    String(1 + (e ? 0 : 0.08 * x.iE.travel)),
+                  ),
+                  (t.current.dataset.chapter =
+                    x.iE.travel < 0.5
+                      ? "forest"
+                      : x.iE.travel < w.qs
+                        ? "room"
+                        : "falls"));
+              }, 10),
+            [e],
+          ),
+          (0, a.jsxs)("div", {
+            className: "fallback-world forest-fallback",
+            ref: t,
+            "data-quality": "D",
+            "data-chapter": "forest",
+            role: "img",
+            "aria-label":
+              "Evening forest stairs, a closed timber sanctuary, and a secluded waterfall.",
+            children: [
+              [
+                ["forest", "forest-stairs"],
+                ["falls", "sacred-waterfall"],
+              ].map(([e, t]) =>
+                (0, a.jsx)(
+                  "img",
+                  {
+                    className: `fallback-view view-${e}`,
+                    src: `/art/${t}.webp`,
+                    alt: "",
+                    width: 1920,
+                    height: 1080,
+                    loading: "forest" === e ? "eager" : "lazy",
+                    decoding: "async",
+                  },
+                  e,
+                ),
+              ),
+              (0, a.jsxs)("div", {
+                className: "fallback-view view-room fallback-timber-room",
+                "aria-hidden": "true",
+                children: [
+                  (0, a.jsx)("div", { className: "fallback-room-ceiling" }),
+                  (0, a.jsx)("div", { className: "fallback-room-floor" }),
+                ],
+              }),
+            ],
+          })
+        );
+      }
+      var b = r(95295),
+        j = r(73916);
+      let k = !1;
+      function S() {
+        let [e, t] = (0, n.useState)([]),
+          [r, s] = (0, n.useState)([]),
+          i = (0, n.useRef)(0);
+        return (
+          (0, n.useEffect)(() => {
+            let e = (e) => {
+              let r = e.target;
+              if (
+                "INPUT" === r.tagName ||
+                "TEXTAREA" === r.tagName ||
+                r.closest(".experience-controls") ||
+                r.closest(".preloader")
+              )
+                return;
+              let a = e.clientX,
+                n = e.clientY,
+                o = -35 + (20 * Math.random() - 10),
+                l = i.current++;
+              t((e) => [...e.slice(-3), { id: l, x: a, y: n, angle: o }]);
+              let c = Array.from({ length: 12 }, () => {
+                let e = Math.random() * Math.PI * 2,
+                  t = 2 + 5 * Math.random(),
+                  r = Math.random() > 0.4;
+                return {
+                  id: i.current++,
+                  x: a,
+                  y: n,
+                  vx: Math.cos(e) * t,
+                  vy: Math.sin(e) * t,
+                  size: r ? 3 + 3 * Math.random() : 4 + 6 * Math.random(),
+                  color: r ? "#e8c66a" : "#a70d16",
+                  opacity: 1,
+                };
+              });
+              (s((e) => [...e.slice(-24), ...c]),
+                setTimeout(() => {
+                  t((e) => e.filter((e) => e.id !== l));
+                }, 280));
+            };
+            return (
+              window.addEventListener("click", e),
+              () => window.removeEventListener("click", e)
+            );
+          }, []),
+          (0, n.useEffect)(() => {
+            let e;
+            if (0 === r.length) return;
+            let t = () => {
+              (s((e) =>
+                e
+                  .map((e) => ({
+                    ...e,
+                    x: e.x + e.vx,
+                    y: e.y + e.vy,
+                    vy: e.vy + 0.18,
+                    opacity: e.opacity - 0.035,
+                  }))
+                  .filter((e) => e.opacity > 0),
+              ),
+                (e = requestAnimationFrame(t)));
+            };
+            return (
+              (e = requestAnimationFrame(t)),
+              () => cancelAnimationFrame(e)
+            );
+          }, [r]),
+          (0, a.jsxs)("div", {
+            className: "click-fx-layer",
+            "aria-hidden": "true",
+            children: [
+              e.map((e) =>
+                (0, a.jsxs)(
+                  "div",
+                  {
+                    className: "click-katana-slash",
+                    style: {
+                      left: `${e.x}px`,
+                      top: `${e.y}px`,
+                      transform: `translate(-50%, -50%) rotate(${e.angle}deg)`,
+                    },
+                    children: [
+                      (0, a.jsx)("span", { className: "slash-glow" }),
+                      (0, a.jsx)("span", { className: "slash-core" }),
+                    ],
+                  },
+                  e.id,
+                ),
+              ),
+              r.map((e) =>
+                (0, a.jsx)(
+                  "span",
+                  {
+                    className: "click-ink-particle",
+                    style: {
+                      left: `${e.x}px`,
+                      top: `${e.y}px`,
+                      width: `${e.size}px`,
+                      height: `${e.size}px`,
+                      backgroundColor: e.color,
+                      opacity: e.opacity,
+                      boxShadow: `0 0 6px ${e.color}`,
+                    },
+                  },
+                  e.id,
+                ),
+              ),
+            ],
+          })
+        );
+      }
+      function N() {
+        let [e, t] = (0, n.useState)({ x: -100, y: -100 }),
+          [r, s] = (0, n.useState)(!1),
+          [i, o] = (0, n.useState)(!1),
+          [l, c] = (0, n.useState)([]),
+          d = (0, n.useRef)(0),
+          [u, h] = (0, n.useState)(!1);
+        return ((0, n.useEffect)(() => {
+          if ((h(!0), window.matchMedia("(hover: none)").matches)) return;
+          let e = 0,
+            r = 0,
+            a = (a) => {
+              let { clientX: n, clientY: i } = a;
+              t({ x: n, y: i });
+              let o = Math.hypot(n - e, i - r);
+              if (o > 12) {
+                ((e = n), (r = i));
+                let t = {
+                  id: d.current++,
+                  x: n,
+                  y: i,
+                  size: Math.min(8, 2.5 + 0.08 * o),
+                  opacity: 0.65,
+                };
+                c((e) => [...e.slice(-14), t]);
+              }
+              let l = a.target;
+              s(
+                !!l?.closest(
+                  'button, a, [role="button"], input, .sensu-blade, .makimono-tab-btn, .chōchin-lantern',
+                ),
+              );
+            },
+            n = () => o(!0),
+            i = () => o(!1);
+          return (
+            window.addEventListener("mousemove", a),
+            window.addEventListener("mousedown", n),
+            window.addEventListener("mouseup", i),
+            () => {
+              (window.removeEventListener("mousemove", a),
+                window.removeEventListener("mousedown", n),
+                window.removeEventListener("mouseup", i));
+            }
+          );
+        }, []),
+        (0, n.useEffect)(() => {
+          if (0 === l.length) return;
+          let e = setInterval(() => {
+            c((e) =>
+              e
+                .map((e) => ({
+                  ...e,
+                  opacity: e.opacity - 0.08,
+                  size: 0.95 * e.size,
+                }))
+                .filter((e) => e.opacity > 0),
+            );
+          }, 40);
+          return () => clearInterval(e);
+        }, [l]),
+        !u || window.matchMedia("(hover: none)").matches)
+          ? null
+          : (0, a.jsxs)("div", {
+              className: "ink-cursor-container",
+              "aria-hidden": "true",
+              children: [
+                l.map((e) =>
+                  (0, a.jsx)(
+                    "span",
+                    {
+                      className: "ink-trail-dot",
+                      style: {
+                        left: `${e.x}px`,
+                        top: `${e.y}px`,
+                        width: `${e.size}px`,
+                        height: `${e.size}px`,
+                        opacity: e.opacity,
+                      },
+                    },
+                    e.id,
+                  ),
+                ),
+                (0, a.jsxs)("div", {
+                  className: `ink-cursor-main ${r ? "is-hover" : ""} ${i ? "is-click" : ""}`,
+                  style: { transform: `translate3d(${e.x}px, ${e.y}px, 0)` },
+                  children: [
+                    (0, a.jsx)("div", { className: "cursor-brush-core" }),
+                    (0, a.jsx)("div", { className: "cursor-enso-ring" }),
+                  ],
+                }),
+              ],
+            });
+      }
+      var T = r(37206),
+        A = r(98500),
+        C = r.n(A),
+        M = r(77976),
+        L = r(24800);
+      function R({ className: e = "" }) {
+        return (0, a.jsx)("svg", {
+          className: `ink-dragon ${e}`,
+          viewBox: "0 0 1000 820",
+          fill: "none",
+          "aria-hidden": "true",
+          children: (0, a.jsxs)("g", {
+            stroke: "currentColor",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            children: [
+              (0, a.jsx)("path", {
+                className: "dragon-spine",
+                pathLength: "1",
+                d: "M790 240C810 375 595 402 465 325S235 315 264 455 615 466 641 579 460 733 299 646 144 615 69 734",
+                strokeWidth: "49",
+              }),
+              (0, a.jsx)("path", {
+                d: "M786 257C794 376 592 384 467 310S215 303 246 461 600 480 622 581 452 708 301 630 140 602 69 734",
+                strokeWidth: "3",
+                opacity: ".6",
+              }),
+              (0, a.jsx)("path", {
+                d: "M783 286l-24-22 1 39-29-18 3 38-37-17 11 35-39-12 18 30-44-6 23 27-44-8 23 29-46-14 14 29-42-18 10 31-36-29-2 32-34-28-3 29-33-27-8 32-26-18-14 34-19-12-19 33-12-5-12 35 13 1-5 30 18-7 10 32 18-16 17 30 20-22 23 24 16-25 32 19 11-28 30 24 18-23 27 27 17-23 33 29 12-18 35 28 8-14 25 29",
+                strokeWidth: "8",
+              }),
+              (0, a.jsx)("path", {
+                d: "M745 351q-25 32 15 77l42 15m-42-15 12 30m-12-30-18 24M332 329q-32-30-64-14l-32-26m32 26-39 8m39-8-12 29M566 516q31-30 64-7l32-17m-32 17 28 16m-28-16 5 30M374 670q-32 22-19 50l-31 23m31-23 9 34m-9-34 26 17",
+                strokeWidth: "9",
+              }),
+              (0, a.jsx)("path", {
+                d: "M98 703q-34 12-54 54 32-15 44-18",
+                fill: "currentColor",
+                strokeWidth: "3",
+              }),
+              (0, a.jsxs)("g", {
+                transform: "translate(705 114) rotate(-12 75 110)",
+                children: [
+                  (0, a.jsx)("path", {
+                    d: "M57 164 36 148 45 126 20 113 44 101 25 78 53 81 42 53 71 66 72 37 92 62 112 42 117 74 148 62 141 93 169 91 151 115 155 141 126 158 109 185 79 173Z",
+                    fill: "currentColor",
+                    strokeWidth: "6",
+                  }),
+                  (0, a.jsx)("path", {
+                    d: "M71 77 46 33 56 8M48 37 26 29M119 78 139 32 129 11M139 34 165 20",
+                    strokeWidth: "9",
+                  }),
+                  (0, a.jsx)("path", {
+                    d: "M68 101q20-14 40 2l31 24 30 4-3 27-43 6-28 21-30-24 8-22-19-20Z",
+                    fill: "var(--dragon-paper, #e5dbc5)",
+                    strokeWidth: "5",
+                  }),
+                  (0, a.jsx)("path", {
+                    d: "m103 119 21 4-11 10Z",
+                    fill: "currentColor",
+                    strokeWidth: "2",
+                  }),
+                  (0, a.jsx)("path", {
+                    d: "m143 146 17 1M97 160q20 15 42-4M129 163l-2 10m-13-7-3 13M64 107Q7 78 6 119T-42 151M110 157q12 52 57 25t78 3",
+                    strokeWidth: "4",
+                  }),
+                ],
+              }),
+              (0, a.jsx)("g", {
+                strokeWidth: "2",
+                opacity: ".65",
+                children: (0, a.jsx)("path", {
+                  d: "m759 313 19 14m-44 5 16 17m-45-6 15 20m-49-6 11 21m-47-13 7 23m-43-20 2 25m-39-24-3 23m-34-32-9 24m-28-37-12 25m-23-34-17 24M320 334l-8 30m-23-7-14 25m-9 0-22 11m7 15-21 15m25 9-17 21m27 0-11 25m31-6-8 29m34-19-2 27m37-22-4 28m37-22-3 26m39-23-4 29m38-25-1 30m38-21-5 29m37-17-9 26m34-7-12 24m27 6-19 20M605 628l16 17m-40-2 10 21m-44-4 5 24m-44-12-1 25m-36-18-9 22m-28-25-13 24m-25-29-15 24m-23-31-17 26",
+                }),
+              }),
+            ],
+          }),
+        });
+      }
+      function P() {
+        let [e, t] = (0, n.useState)(!1),
+          r = (0, n.useRef)(!1),
+          s = (0, n.useRef)(null),
+          i = (0, n.useCallback)(() => {
+            (t(!1),
+              r.current && (0, b.RJ)(!0),
+              (r.current = !1),
+              requestAnimationFrame(() =>
+                s.current?.focus({ preventScroll: !0 }),
+              ));
+          }, []);
+        return (
+          (0, n.useEffect)(
+            () => () => {
+              r.current && (0, b.RJ)(!0);
+            },
+            [],
+          ),
+          (0, n.useEffect)(() => {
+            if (!e) return;
+            let t = (e) => {
+              "Escape" === e.key && i();
+            };
+            return (
+              window.addEventListener("keydown", t),
+              () => window.removeEventListener("keydown", t)
+            );
+          }, [e, i]),
+          (0, a.jsxs)("article", {
+            className: `reveal-card${e ? " is-playing" : ""}`,
+            "aria-labelledby": "reveal-title",
+            "data-lenis-prevent": !0,
+            children: [
+              (0, a.jsx)("span", {
+                className: "reveal-kicker",
+                children: "THE FINAL CHAPTER \xb7 THEME REVEAL",
+              }),
+              (0, a.jsx)("h2", {
+                id: "reveal-title",
+                children: "A Mystic Mikado",
+              }),
+              (0, a.jsx)("p", {
+                children: "Beyond the final gate, the story begins.",
+              }),
+              e
+                ? (0, a.jsxs)(a.Fragment, {
+                    children: [
+                      (0, a.jsx)("iframe", {
+                        title: "PECFEST 2026 Theme Reveal",
+                        src: "https://www.youtube-nocookie.com/embed/dhzCjRJDJYE?autoplay=1&rel=0",
+                        className: "reveal-video",
+                        allow:
+                          "autoplay; encrypted-media; picture-in-picture; fullscreen",
+                        allowFullScreen: !0,
+                        referrerPolicy: "strict-origin-when-cross-origin",
+                      }),
+                      (0, a.jsxs)("div", {
+                        className: "reveal-player-actions",
+                        children: [
+                          (0, a.jsx)("button", {
+                            type: "button",
+                            onClick: i,
+                            children: "Back to the waterfall",
+                          }),
+                          (0, a.jsx)("a", {
+                            href: "https://youtu.be/dhzCjRJDJYE",
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            children: "Watch on YouTube ↗",
+                          }),
+                        ],
+                      }),
+                    ],
+                  })
+                : (0, a.jsxs)("button", {
+                    ref: s,
+                    type: "button",
+                    className: "reveal-poster",
+                    onClick: () => {
+                      ((r.current = (0, L.s_)().enabled),
+                        r.current && (0, b.RJ)(!1),
+                        t(!0));
+                    },
+                    "aria-label": "Watch the PECFEST reveal",
+                    children: [
+                      (0, a.jsxs)("span", {
+                        className: "reveal-poster-art",
+                        "aria-hidden": "true",
+                        children: [
+                          (0, a.jsx)("span", { className: "reveal-sun" }),
+                          (0, a.jsxs)("svg", {
+                            className: "reveal-flames",
+                            viewBox: "0 0 640 360",
+                            fill: "none",
+                            children: [
+                              (0, a.jsx)("path", {
+                                d: "M0 360c60-72 25-100 78-145-20 69 71 47 56 123 12-63 54-96 46-156 64 71 11 128 84 178Z",
+                              }),
+                              (0, a.jsx)("path", {
+                                d: "M640 360c-75-42-27-111-82-155 11 48-48 40-48 89-14-55-47-76-20-157-102 87-44 149-91 223Z",
+                              }),
+                              (0, a.jsx)("path", {
+                                d: "M540 359c-61-45-4-84-41-125m-362 124c42-45-16-62-2-95",
+                              }),
+                            ],
+                          }),
+                          (0, a.jsx)(R, { className: "reveal-dragon" }),
+                          (0, a.jsx)("span", {
+                            className: "reveal-embers",
+                            children: Array.from({ length: 8 }, (e, t) =>
+                              (0, a.jsx)("i", {}, t),
+                            ),
+                          }),
+                          (0, a.jsxs)("span", {
+                            className: "reveal-poster-brand",
+                            children: [
+                              "PECFEST ",
+                              (0, a.jsx)("span", { children: "2026" }),
+                            ],
+                          }),
+                          (0, a.jsx)("span", {
+                            className: "reveal-poster-note",
+                            children: "THE FLAME AWAKENS",
+                          }),
+                        ],
+                      }),
+                      (0, a.jsx)("span", {
+                        className: "reveal-play",
+                        "aria-hidden": "true",
+                        children: (0, a.jsx)("svg", {
+                          viewBox: "0 0 24 24",
+                          fill: "currentColor",
+                          children: (0, a.jsx)("path", {
+                            d: "m9 5 11 7-11 7Z",
+                          }),
+                        }),
+                      }),
+                      (0, a.jsx)("span", {
+                        className: "reveal-poster-caption",
+                        children: "Watch the reveal",
+                      }),
+                    ],
+                  }),
+            ],
+          })
+        );
+      }
+      function _({ onDoor: e, fallback: t = !1 }) {
+        let r = (0, n.useRef)(null),
+          [s, i] = (0, n.useState)(0),
+          [l, c] = (0, n.useState)(0),
+          [d, u] = (0, n.useState)(!1),
+          [h, m] = (0, n.useState)(!1),
+          [p, g] = (0, n.useState)(!1),
+          f = (0, n.useRef)({
+            phase: 0,
+            door: 0,
+            aligned: !1,
+            opening: !1,
+            leaving: !1,
+          }),
+          [v, y] = (0, n.useState)(!1);
+        ((0, n.useEffect)(() => {
+          let e = () => y(!!localStorage.getItem("token"));
+          return (
+            e(),
+            window.addEventListener("tokenChanged", e),
+            window.addEventListener("storage", e),
+            () => {
+              (window.removeEventListener("tokenChanged", e),
+                window.removeEventListener("storage", e));
+            }
+          );
+        }, []),
+          (0, n.useEffect)(
+            () =>
+              (0, x.k9)(() => {
+                let e = x.iE.travel;
+                (r.current?.style.setProperty(
+                  "--intro-opacity",
+                  String(Math.max(0, 1 - e / 0.12)),
+                ),
+                  r.current?.style.setProperty(
+                    "--journey-progress",
+                    `${100 * e}%`,
+                  ));
+                let t = e < 0.18 ? 0 : e < 0.52 ? 1 : e < w.qs ? 2 : 3,
+                  a = 2 === t && e >= w.ir;
+                f.current.leaving !== a && (g(a), (f.current.leaving = a));
+                let n = x.iE.roomDoor;
+                f.current.aligned !== x.iE.doorAligned &&
+                  (u(x.iE.doorAligned), (f.current.aligned = x.iE.doorAligned));
+                let s = x.iE.openDoor >= 0;
+                (f.current.opening !== s && (m(s), (f.current.opening = s)),
+                  f.current.phase !== t && (i(t), (f.current.phase = t)),
+                  f.current.door !== n && (c(n), (f.current.door = n)));
+              }, 15),
+            [],
+          ));
+        let E = (0, n.useCallback)((e) => {
+          if (x.iE.openDoor >= 0) return;
+          let t =
+            (x.iE.roomDoor + ("left" === e ? 1 : -1) + w.iB.length) %
+            w.iB.length;
+          (0, o.hU)((0, w.EZ)(t), !0);
+        }, []);
+        (0, n.useEffect)(() => {
+          if (2 !== s || t || p) return;
+          let e = (e) => {
+            e.target instanceof HTMLInputElement ||
+              e.target instanceof HTMLTextAreaElement ||
+              (e.target instanceof Element && e.target.closest("dialog")) ||
+              ("ArrowLeft" === e.key
+                ? (e.preventDefault(), E("left"))
+                : "ArrowRight" === e.key && (e.preventDefault(), E("right")));
+          };
+          return (
+            window.addEventListener("keydown", e),
+            () => window.removeEventListener("keydown", e)
+          );
+        }, [s, E, t, p]);
+        let b = w.iB[l] || w.iB[0];
+        return (0, a.jsx)("section", {
+          ref: r,
+          id: "journey",
+          className: "journey forest-journey",
+          "data-phase": s,
+          "data-fallback": t,
+          "data-leaving": p,
+          "aria-labelledby": "hero-title",
+          children: (0, a.jsxs)("div", {
+            className: "hero-sticky",
+            children: [
+              (0, a.jsxs)("div", {
+                className: "forest-intro",
+                inert: 0 !== s,
+                children: [
+                  (0, a.jsxs)("div", {
+                    className: "hero-presenter",
+                    children: [
+                      (0, a.jsx)("span", {
+                        className: "hero-presenter-plate",
+                        children: (0, a.jsx)("img", {
+                          src: "/logos/anant-raj-hero.webp",
+                          alt: "Anant Raj Limited",
+                          width: 480,
+                          height: 359,
+                        }),
+                      }),
+                      (0, a.jsx)("p", {
+                        className: "hero-presents",
+                        children: "presents",
+                      }),
+                    ],
+                  }),
+                  (0, a.jsx)("h1", {
+                    id: "hero-title",
+                    children: (0, a.jsx)("img", {
+                      src: "/pecfest-logo-hero.webp",
+                      alt: "PECFEST 2026",
+                      className: "hero-festival-logo",
+                      width: 1e3,
+                      height: 867,
+                      style: {
+                        display: "block",
+                        height: "auto",
+                        margin: "0 auto",
+                      },
+                    }),
+                  }),
+                  (0, a.jsxs)("div", {
+                    className: "hero-actions",
+                    children: [
+                      (0, a.jsxs)("button", {
+                        className: "forest-enter",
+                        type: "button",
+                        onClick: () => (0, o.hU)(t ? w.Pm : 0.4, t),
+                        children: [
+                          "Enter the sanctuary ",
+                          (0, a.jsx)("span", {
+                            "aria-hidden": "true",
+                            children: "↗",
+                          }),
+                        ],
+                      }),
+                      (0, a.jsxs)("button", {
+                        className: "hero-scroll-cue",
+                        type: "button",
+                        onClick: () => (0, o.hU)(t ? w.Pm : 0.2, t),
+                        children: [
+                          "Scroll to experience ",
+                          (0, a.jsx)("span", {
+                            "aria-hidden": "true",
+                            children: "↓",
+                          }),
+                        ],
+                      }),
+                      (0, a.jsx)(C(), {
+                        className: "hero-login",
+                        href: v ? "/profile" : "/login",
+                        children: v ? "My profile" : "Login",
+                      }),
+                    ],
+                  }),
+                ],
+              }),
+              !p &&
+                (0, a.jsxs)("div", {
+                  className: `journey-caption ${0 === s ? "is-intro" : ""}`,
+                  "aria-live": "polite",
+                  children: [
+                    (0, a.jsxs)("span", {
+                      children: ["0", s + 1, " / ", w.tj[s].label],
+                    }),
+                    (0, a.jsx)("p", { children: w.tj[s].detail }),
+                  ],
+                }),
+              2 === s && !p && t
+                ? (0, a.jsxs)("div", {
+                    className: "fallback-directory",
+                    "aria-labelledby": "fallback-door-title",
+                    "data-lenis-prevent": !0,
+                    children: [
+                      (0, a.jsx)("span", {
+                        className: "fallback-door-kicker",
+                        children: "THE SEVEN GATES",
+                      }),
+                      (0, a.jsx)("h2", {
+                        id: "fallback-door-title",
+                        children: "Choose your chapter.",
+                      }),
+                      (0, a.jsx)("p", {
+                        children: "Every door opens a different world.",
+                      }),
+                      (0, a.jsx)("div", {
+                        className: "fallback-door-wall",
+                        children: w.iB.map((t) =>
+                          (0, a.jsxs)(
+                            "button",
+                            {
+                              type: "button",
+                              className: "fallback-door",
+                              disabled: h,
+                              onClick: () => e(t.id),
+                              children: [
+                                (0, a.jsxs)("small", {
+                                  children: [t.mark, " / ", t.subtitle],
+                                }),
+                                (0, a.jsx)("strong", { children: t.title }),
+                                (0, a.jsx)("span", {
+                                  children: "Open this door ↗",
+                                }),
+                              ],
+                            },
+                            t.id,
+                          ),
+                        ),
+                      }),
+                    ],
+                  })
+                : 2 !== s || p
+                  ? null
+                  : (0, a.jsxs)("div", {
+                      className: "room-compass",
+                      children: [
+                        (0, a.jsx)("p", {
+                          children:
+                            "Click a door to enter \xb7 scroll or use arrows to turn",
+                        }),
+                        (0, a.jsxs)("div", {
+                          children: [
+                            (0, a.jsx)("button", {
+                              className: "compass-turn compass-turn-left",
+                              onClick: () => E("left"),
+                              disabled: h,
+                              "aria-label":
+                                "Turn left to next destination door",
+                              children: (0, a.jsx)(M.i3, {}),
+                            }),
+                            (0, a.jsxs)("button", {
+                              className: "door-action",
+                              disabled: !d || h,
+                              onClick: () => e(b.id),
+                              children: [
+                                (0, a.jsxs)("small", {
+                                  children: [b.mark, " / ", b.subtitle],
+                                }),
+                                (0, a.jsx)("strong", { children: b.title }),
+                                (0, a.jsx)("span", {
+                                  children: h
+                                    ? "Entering…"
+                                    : d
+                                      ? "Open this door ↗"
+                                      : "Turning to this door…",
+                                }),
+                              ],
+                            }),
+                            (0, a.jsx)("button", {
+                              className: "compass-turn",
+                              onClick: () => E("right"),
+                              disabled: h,
+                              "aria-label":
+                                "Turn right to previous destination door",
+                              children: (0, a.jsx)(M.i3, {}),
+                            }),
+                          ],
+                        }),
+                      ],
+                    }),
+              3 === s && (0, a.jsx)(P, {}),
+              (0, a.jsx)("div", {
+                className: "journey-progress",
+                "aria-hidden": "true",
+                children: (0, a.jsx)("i", {}),
+              }),
+              (0, a.jsx)("span", {
+                className: "journey-scroll",
+                style: t && p ? { display: "block", bottom: 82 } : void 0,
+                children: p
+                  ? "Continue through the open gate ↓"
+                  : 2 === s
+                    ? "Keep scrolling to discover the hidden falls ↓"
+                    : 3 === s
+                      ? "Your next chapter awaits."
+                      : "Scroll to explore the sanctuary ↓",
+              }),
+            ],
+          }),
+        });
+      }
+      var F = r(30188);
+      let $ = ["/pecfest-logo-display.webp", "/pecfest-logo-512.webp"];
+      var q = r(41463);
+      function O(e) {
+        let t = q.env.NEXT_PUBLIC_PERF_ENDPOINT;
+        if (!t || "u" < typeof navigator || !navigator.sendBeacon) return;
+        let r = JSON.stringify({
+          ...e,
+          path: window.location.pathname,
+          timestamp: Date.now(),
+        });
+        navigator.sendBeacon(t, new Blob([r], { type: "application/json" }));
+      }
+      class B {
+        finish() {
+          this.finished = !0;
+        }
+        advance(e, t, r, a) {
+          return (
+            !this.finished &&
+            (a !== this.revision && ((this.revision = a), (this.quiet = 0)),
+            !!t &&
+              ((this.elapsed += Math.max(0, e)),
+              (this.quiet += Math.max(0, e)),
+              (this.elapsed >= 9e4 || (0 === r && this.quiet >= 3e4)) &&
+                ((this.finished = !0), !0)))
+          );
+        }
+        constructor() {
+          ((this.elapsed = 0),
+            (this.quiet = 0),
+            (this.revision = 0),
+            (this.finished = !1));
+        }
+      }
+      let D = (0, T.default)(
+        () =>
+          Promise.all([
+            r.e(2167),
+            r.e(9367),
+            r.e(4664),
+            r.e(6413),
+            r.e(9304),
+            r.e(7598),
+            r.e(829),
+            r.e(6885),
+          ]).then(r.bind(r, 36885)),
+        {
+          loadableGenerated: { webpack: () => [36885] },
+          ssr: !1,
+          loading: () => null,
+        },
+      );
+      class I extends n.Component {
+        static getDerivedStateFromError(e) {
+          return (
+            console.error("SceneBoundary getDerivedStateFromError:", e),
+            { failed: !0 }
+          );
+        }
+        componentDidCatch(e, t) {
+          (console.error("SceneBoundary componentDidCatch:", e, t),
+            this.props.onFailure(e?.message));
+        }
+        render() {
+          return this.state.failed ? this.props.fallback : this.props.children;
+        }
+        constructor(...e) {
+          (super(...e), (this.state = { failed: !1 }));
+        }
+      }
+      function H() {
+        var e;
+        let t,
+          c,
+          d,
+          u = (0, n.useSyncExternalStore)(
+            i,
+            () => window.matchMedia(s).matches,
+            () => !0,
+          ),
+          [h, m] = (0, n.useState)(!1),
+          [T, A] = (0, n.useState)(h),
+          [C, M] = (0, n.useState)(0),
+          [L, R] = (0, n.useState)(!1),
+          [P, q] = (0, n.useState)(k),
+          [H, W] = (0, n.useState)(null),
+          J = (0, n.useRef)(null),
+          U = (0, n.useRef)(!1);
+        ((0, n.useEffect)(
+          () =>
+            (function () {
+              if ("u" < typeof PerformanceObserver) return () => {};
+              let e = [],
+                t = new PerformanceObserver((e) => {
+                  let t = e.getEntries()[0];
+                  t &&
+                    O({
+                      name: "navigation",
+                      value: t.loadEventEnd - t.startTime,
+                      detail: {
+                        domContentLoaded:
+                          t.domContentLoadedEventEnd - t.startTime,
+                        response: t.responseEnd - t.requestStart,
+                      },
+                    });
+                });
+              (t.observe({ type: "navigation", buffered: !0 }), e.push(t));
+              try {
+                let t = new PerformanceObserver((e) => {
+                  let t = e.getEntries().reduce((e, t) => e + t.duration, 0);
+                  O({
+                    name: "long-task",
+                    value: t,
+                    detail: { count: e.getEntries().length },
+                  });
+                });
+                (t.observe({ type: "longtask", buffered: !0 }), e.push(t));
+              } catch {}
+              return () => e.forEach((e) => e.disconnect());
+            })(),
+          [],
+        ),
+          (0, n.useEffect)(() => {
+            if (!("serviceWorker" in navigator)) return;
+            let e = (e) => {
+              e.data?.type === "PECFEST_CACHE_STATUS" &&
+                console.info("[PECFEST cache] navigation request", {
+                  status: e.data.status,
+                  url: e.data.url,
+                });
+            };
+            return (
+              navigator.serviceWorker.addEventListener("message", e),
+              (async () => {
+                try {
+                  let e = await navigator.serviceWorker.register(
+                    "/asset-cache-sw.js",
+                    { scope: "/" },
+                  );
+                  await navigator.serviceWorker.ready;
+                  let t = await caches.open("pecfest-navigation-v2"),
+                    r = await caches.open("pecfest-cloudinary-assets-v3"),
+                    a = !!(await t.match(window.location.origin + "/", {
+                      ignoreSearch: !0,
+                    })),
+                    n = (await r.keys()).length,
+                    s = navigator.serviceWorker.controller ?? e.active;
+                  (console.info("[PECFEST cache] client status", {
+                    controlled: !!navigator.serviceWorker.controller,
+                    navigation: a ? "HIT" : "MISS",
+                    cloudinaryAssets: n,
+                  }),
+                    s?.postMessage({ type: "PECFEST_CHECK_NAVIGATION_CACHE" }),
+                    navigator.serviceWorker.controller &&
+                      s?.postMessage({
+                        type: "PECFEST_WARM_ASSETS",
+                        urls: $.map((e) =>
+                          /\.(?:png|jpe?g|webp)$/i.test(e)
+                            ? (0, g.Qc)(e)
+                            : (0, g.sU)(e),
+                        ),
+                      }));
+                } catch (e) {
+                  console.warn("[PECFEST cache] unavailable", e);
+                }
+              })(),
+              () => navigator.serviceWorker.removeEventListener("message", e)
+            );
+          }, []));
+        let z = (0, n.useCallback)(() => {
+            (console.warn(
+              "The immersive scene exceeded its visible startup budget; showing the accessible fallback.",
+            ),
+              m(!0),
+              A(!0));
+          }, []),
+          { finish: V, restart: Y } =
+            ((e = !T),
+            (t = (0, n.useRef)(!1)),
+            (c = (0, n.useCallback)(() => {
+              t.current = !0;
+            }, [])),
+            (d = (0, n.useCallback)(() => {
+              t.current = !1;
+            }, [])),
+            (0, n.useEffect)(() => {
+              if (!e) return;
+              let r = new B(),
+                a = 0,
+                n = 0,
+                s = performance.now(),
+                i = p((e) => {
+                  ((a = e.pending), (n = e.revision));
+                }),
+                o = () => {
+                  s = performance.now();
+                };
+              document.addEventListener("visibilitychange", o);
+              let l = setInterval(() => {
+                let e = performance.now(),
+                  i = e - s;
+                ((s = e), t.current)
+                  ? r.finish()
+                  : r.advance(i, !document.hidden, a, n) && z();
+              }, 250);
+              return () => {
+                (clearInterval(l),
+                  i(),
+                  document.removeEventListener("visibilitychange", o));
+              };
+            }, [e, C, z]),
+            { finish: c, restart: d }),
+          Z = (0, n.useCallback)(
+            (e) => {
+              (V(),
+                e
+                  ? console.error("onFailure triggered:", e)
+                  : console.warn(
+                      "The immersive view is unavailable; showing the accessible fallback.",
+                    ),
+                m(!0),
+                A(!0));
+            },
+            [V],
+          ),
+          G = (0, n.useCallback)(() => {
+            (V(), A(!0));
+          }, [V]),
+          X = async () => {
+            if (!L) {
+              R(!0);
+              try {
+                let { clearSceneAssets: e } = await Promise.all([
+                  r.e(2167),
+                  r.e(9367),
+                  r.e(7598),
+                  r.e(4576),
+                ]).then(r.bind(r, 34576));
+                (e(), Y(), A(!1), m(!1), M((e) => e + 1));
+              } catch (e) {
+                console.warn(
+                  "The immersive view could not restart; the quiet view is still available.",
+                  e,
+                );
+              } finally {
+                R(!1);
+              }
+            }
+          },
+          K = (0, n.useCallback)(() => {
+            ((k = !0), q(!0));
+          }, []);
+        ((0, n.useEffect)(() => {
+          if (
+            (new URLSearchParams(window.location.search), window.location.hash)
+          ) {
+            let e = window.location.hash.replace("#", "");
+            ("paths" === e ||
+              "schedule" === e ||
+              "matsuri" === e ||
+              "legacy" === e) &&
+              (q(!0), setTimeout(() => (0, o.mH)(e, !0), 350));
+          }
+        }, []),
+          (0, o.Wm)(u),
+          (0, n.useEffect)(
+            () => () => {
+              (J.current?.(),
+                (J.current = null),
+                (U.current = !1),
+                l.Ay.killTweensOf(x.iE, "doorAmount"));
+            },
+            [],
+          ),
+          (0, n.useEffect)(() => {
+            if (u) return;
+            let e = window.matchMedia("(hover: hover) and (pointer: fine)"),
+              t = () => {},
+              r = () => {
+                let r, a, n, s, i, o, c, d;
+                (t(),
+                  (t = e.matches
+                    ? ((r = new Map()),
+                      (a = null),
+                      (n = () => {
+                        a && (a.moveX(0), a.moveY(0), (a = null));
+                      }),
+                      (s = (e) => {
+                        if (
+                          "mouse" !== e.pointerType ||
+                          !(e.target instanceof Element)
+                        )
+                          return;
+                        let t = e.target.closest(
+                          ".button, .header-register, .sound-seal, .path-card",
+                        );
+                        if (
+                          !t ||
+                          t.matches(':disabled, [aria-disabled="true"]') ||
+                          t.closest("[inert]") ||
+                          a?.element === t
+                        )
+                          return;
+                        n();
+                        let s = r.get(t);
+                        if (!s) {
+                          let e, a, n, i;
+                          ((e = t.matches(".path-card")),
+                            (a = {
+                              translate: t.style.translate,
+                              rotate: t.style.rotate,
+                              mx: t.style.getPropertyValue("--mx"),
+                              my: t.style.getPropertyValue("--my"),
+                              attribute: t.getAttribute("data-physical"),
+                            }),
+                            (n = { x: 0, y: 0 }),
+                            (i = () => {
+                              if (e) {
+                                let e = Math.hypot(n.x, n.y);
+                                t.style.rotate =
+                                  e < 0.001
+                                    ? "none"
+                                    : `${-n.y} ${n.x} 0 ${3 * e}deg`;
+                              } else
+                                t.style.translate = `${7 * n.x}px ${5 * n.y}px`;
+                            }),
+                            (t.dataset.physical = e ? "card" : "button"),
+                            (s = {
+                              element: t,
+                              card: e,
+                              saved: a,
+                              moveX: l.Ay.quickTo(n, "x", {
+                                duration: 0.45,
+                                ease: "power3.out",
+                                onUpdate: i,
+                              }),
+                              moveY: l.Ay.quickTo(n, "y", {
+                                duration: 0.45,
+                                ease: "power3.out",
+                                onUpdate: i,
+                              }),
+                              rect: t.getBoundingClientRect(),
+                            }),
+                            r.set(t, s));
+                        }
+                        ((s.rect = t.getBoundingClientRect()), (a = s));
+                      }),
+                      (i = (e) => {
+                        if (!a || "mouse" !== e.pointerType) return;
+                        let { rect: t, element: r, card: n } = a;
+                        if (0 === t.width || 0 === t.height) return;
+                        let s = Math.max(
+                            -1,
+                            Math.min(
+                              1,
+                              ((e.clientX - t.left) / t.width) * 2 - 1,
+                            ),
+                          ),
+                          i = Math.max(
+                            -1,
+                            Math.min(
+                              1,
+                              ((e.clientY - t.top) / t.height) * 2 - 1,
+                            ),
+                          );
+                        (a.moveX(s),
+                          a.moveY(i),
+                          n &&
+                            (r.style.setProperty("--mx", `${(s + 1) * 50}%`),
+                            r.style.setProperty("--my", `${(i + 1) * 50}%`)));
+                      }),
+                      (o = (e) => {
+                        !a ||
+                          (e.relatedTarget instanceof Node &&
+                            a.element.contains(e.relatedTarget)) ||
+                          n();
+                      }),
+                      (c = () => {
+                        a && (a.rect = a.element.getBoundingClientRect());
+                      }),
+                      (d = (e) => {
+                        "Tab" === e.key && n();
+                      }),
+                      document.addEventListener("pointerover", s, {
+                        passive: !0,
+                      }),
+                      document.addEventListener("pointermove", i, {
+                        passive: !0,
+                      }),
+                      document.addEventListener("pointerout", o, {
+                        passive: !0,
+                      }),
+                      document.addEventListener("keydown", d),
+                      window.addEventListener("blur", n),
+                      window.addEventListener("scroll", c, { passive: !0 }),
+                      window.addEventListener("resize", c, { passive: !0 }),
+                      () => {
+                        for (let {
+                          element: e,
+                          saved: t,
+                          moveX: a,
+                          moveY: l,
+                        } of (document.removeEventListener("pointerover", s),
+                        document.removeEventListener("pointermove", i),
+                        document.removeEventListener("pointerout", o),
+                        document.removeEventListener("keydown", d),
+                        window.removeEventListener("blur", n),
+                        window.removeEventListener("scroll", c),
+                        window.removeEventListener("resize", c),
+                        r.values())) {
+                          for (let r of (a.tween.kill(),
+                          l.tween.kill(),
+                          (e.style.translate = t.translate),
+                          (e.style.rotate = t.rotate),
+                          ["mx", "my"]))
+                            t[r]
+                              ? e.style.setProperty(`--${r}`, t[r])
+                              : e.style.removeProperty(`--${r}`);
+                          null === t.attribute
+                            ? e.removeAttribute("data-physical")
+                            : e.setAttribute("data-physical", t.attribute);
+                        }
+                        (r.clear(), (a = null));
+                      })
+                    : () => {}));
+              };
+            return (
+              r(),
+              e.addEventListener("change", r),
+              () => {
+                (e.removeEventListener("change", r), t());
+              }
+            );
+          }, [u]),
+          (0, n.useEffect)(() => {
+            document.documentElement.dataset.motion = u ? "paused" : "playing";
+          }, [u]),
+          (0, n.useEffect)(
+            () => (
+              (x.iE.covered = !P),
+              () => {
+                x.iE.covered = !1;
+              }
+            ),
+            [P],
+          ));
+        let Q = (0, n.useCallback)(() => {
+          x.iE.covered = !1;
+        }, []);
+        ((0, n.useEffect)(() => {
+          let e = document.body.style.overflow;
+          return (
+            P || (document.body.style.overflow = "hidden"),
+            () => {
+              document.body.style.overflow = e;
+            }
+          );
+        }, [P]),
+          (0, n.useEffect)(() => {
+            let e = (e) => {
+              "Escape" === e.key && W(null);
+            };
+            return (
+              window.addEventListener("keydown", e),
+              () => window.removeEventListener("keydown", e)
+            );
+          }, []));
+        let ee = (e) => {
+          let t = w.iB.findIndex((t) => t.id === e);
+          if (!(t < 0) && !U.current) {
+            if (h) {
+              ((0, b.q3)("clack"), (0, j.VJ)(w.iB[t].href));
+              return;
+            }
+            ((U.current = !0),
+              (0, o.hU)((0, w.EZ)(t), !0),
+              (J.current = (0, x.k9)(() => {
+                if (x.iE.roomDoor !== t) {
+                  (J.current?.(), (J.current = null), (U.current = !1));
+                  return;
+                }
+                x.iE.doorAligned &&
+                  (J.current?.(),
+                  (J.current = null),
+                  (x.iE.openDoor = t),
+                  (0, b.q3)("clack"),
+                  l.Ay.to(x.iE, {
+                    doorAmount: 1,
+                    duration: 0.85 * !u,
+                    ease: "power2.inOut",
+                    onComplete: () => {
+                      ((0, j.VJ)(w.iB[t].href),
+                        l.Ay.to(x.iE, {
+                          doorAmount: 0,
+                          delay: 0.35,
+                          duration: 0.7 * !u,
+                          onComplete: () => {
+                            ((x.iE.openDoor = -1), (U.current = !1));
+                          },
+                        }));
+                    },
+                  }));
+              })));
+          }
+        };
+        return (0, a.jsxs)(a.Fragment, {
+          children: [
+            (0, a.jsx)(
+              I,
+              {
+                onFailure: Z,
+                fallback: (0, a.jsx)(E, { paused: u }),
+                children: h
+                  ? (0, a.jsx)(E, { paused: u })
+                  : (0, a.jsx)(n.Suspense, {
+                      fallback: (0, a.jsx)(E, { paused: !0 }),
+                      children: (0, a.jsx)(D, {
+                        paused: u,
+                        onFailure: Z,
+                        onReady: G,
+                        onDoor: ee,
+                      }),
+                    }),
+              },
+              C,
+            ),
+            !T &&
+              (0, a.jsx)("div", {
+                className: "scene-startup-backdrop",
+                "data-scene-starting": "true",
+                children: (0, a.jsx)(E, { paused: !0 }),
+              }),
+            (0, a.jsx)("div", {
+              className: "world-vignette",
+              "aria-hidden": "true",
+            }),
+            (0, a.jsx)("div", {
+              className: "paper-grain",
+              "aria-hidden": "true",
+            }),
+            (0, a.jsx)(S, {}),
+            (0, a.jsx)(N, {}),
+            (0, a.jsxs)("div", {
+              className: "site-ui",
+              inert: !P,
+              children: [
+                (0, a.jsx)("a", {
+                  className: "skip-link",
+                  href: "/events",
+                  children: "Skip to events",
+                }),
+                (0, a.jsx)("main", {
+                  children: (0, a.jsx)(_, { onDoor: ee, fallback: h || !T }),
+                }),
+                (0, a.jsxs)("div", {
+                  className: "experience-controls",
+                  children: [
+                    (0, a.jsx)(f.y, {}),
+                    h &&
+                      (0, a.jsx)("button", {
+                        className: "scene-retry",
+                        type: "button",
+                        disabled: L,
+                        onClick: X,
+                        children: L ? "Reopening…" : "Retry immersive view ↗",
+                      }),
+                  ],
+                }),
+              ],
+            }),
+            P
+              ? null
+              : (0, a.jsx)(v, {
+                  ready: T,
+                  failed: h,
+                  reduced: u,
+                  onComplete: K,
+                  onReveal: Q,
+                }),
+            "gallery" === H
+              ? (0, a.jsxs)(y, {
+                  title: "Chronicles of the Festival",
+                  onClose: () => W(null),
+                  children: [
+                    (0, a.jsx)("p", {
+                      className: "dialog-lead",
+                      children:
+                        "Illustrative gallery stories for the design preview.",
+                    }),
+                    (0, a.jsx)("div", {
+                      className: "gallery-grid",
+                      children: F.r.map((e) =>
+                        (0, a.jsxs)(
+                          "div",
+                          {
+                            className: "gallery-item-card",
+                            children: [
+                              (0, a.jsxs)("span", {
+                                className: "gallery-badge",
+                                children: [e.edition, " \xb7 ", e.category],
+                              }),
+                              (0, a.jsx)("h3", { children: e.title }),
+                              (0, a.jsx)("p", { children: e.description }),
+                            ],
+                          },
+                          e.id,
+                        ),
+                      ),
+                    }),
+                  ],
+                })
+              : null,
+          ],
+        });
+      }
+      function W() {
+        return (0, a.jsx)(H, {});
+      }
+    },
+    52228: (e, t, r) => {
+      "use strict";
+      r.d(t, { sU: () => n, Qc: () => s, gJ: () => i });
+      let a = JSON.parse(
+        '{"/models/CHerry_blossom_draco.glb":"https://res.cloudinary.com/xcjt6dhx/image/upload/v1791703997/cherry_blossom_draco_2_-compressed.glb","/models/Cedar_tree.glb":"https://res.cloudinary.com/xcjt6dhx/image/upload/v1791705151/cedar_tree_1_-compressed.glb","/textures/forest_env.hdr":"https://res.cloudinary.com/xcjt6dhx/raw/upload/v1790763988/forest_env_1024.hdr","/textures/cedar_billboard.png":"https://res.cloudinary.com/xcjt6dhx/image/upload/v1790764046/cedar_billboard.png","/textures/cedar_leaf_rgba.png":"https://res.cloudinary.com/xcjt6dhx/image/upload/v1790764068/cedar_leaf_rgba.png","/pecfest-logo-display.webp":"https://res.cloudinary.com/xcjt6dhx/image/upload/v1790763641/pecfest2026/branding/pecfest_logo_display.webp","/audio/ambience.mp3":"https://res.cloudinary.com/xcjt6dhx/video/upload/v1790764076/ambience_loop.mp3"}',
+      );
+      function n(e) {
+        return a[e] ? a[e] : e;
+      }
+      function s(e) {
+        let t = n(e);
+        return t.includes("res.cloudinary.com") &&
+          t.includes("/image/upload/") &&
+          !t.includes("f_auto")
+          ? t.replace("/image/upload/", "/image/upload/f_auto,q_auto/")
+          : t;
+      }
+      function i(e, t) {
+        return t
+          .map(
+            (t) =>
+              `${(function (e, t, r = {}) {
+                let a = n(e);
+                if (
+                  !a.includes("res.cloudinary.com") ||
+                  !a.includes("/image/upload/")
+                )
+                  return a;
+                let s = r.quality ?? "auto",
+                  i = r.dpr ?? "auto",
+                  o = `f_auto,q_${s},w_${Math.max(1, Math.round(t))},dpr_${i}`,
+                  l = "/image/upload/",
+                  c = a.indexOf(l),
+                  d = a.slice(c + l.length);
+                return /^(?:f_|q_|w_|dpr_|c_|ar_)/.test(d)
+                  ? a.replace(l, `${l}${o},`)
+                  : a.replace(l, `${l}${o}/`);
+              })(e, t)} ${t}w`,
+          )
+          .join(", ");
+      }
+    },
+    57295: (e, t, r) => {
+      "use strict";
+      r.d(t, { y: () => o });
+      var a = r(95155),
+        n = r(12115),
+        s = r(24800),
+        i = r(95295);
+      function o({ className: e = "" }) {
+        let { enabled: t, status: r } = (0, n.useSyncExternalStore)(
+          s.w,
+          s.s_,
+          s.Z5,
+        );
+        return (0, a.jsxs)("div", {
+          className: "sound-control",
+          children: [
+            (0, a.jsxs)("button", {
+              type: "button",
+              className: `sound-seal ${"playing" === r ? "is-playing" : ""} ${e}`,
+              "aria-pressed": t,
+              "aria-label":
+                "loading" === r
+                  ? "Cancel sound loading"
+                  : t
+                    ? "Mute sound"
+                    : "Enable sound",
+              "aria-busy": "loading" === r,
+              onClick: () => (0, i.RJ)(!(0, s.s_)().enabled),
+              children: [
+                (0, a.jsxs)("span", {
+                  className: "sound-bars",
+                  "aria-hidden": "true",
+                  children: [
+                    (0, a.jsx)("i", {}),
+                    (0, a.jsx)("i", {}),
+                    (0, a.jsx)("i", {}),
+                    (0, a.jsx)("i", {}),
+                  ],
+                }),
+                (0, a.jsx)("span", {
+                  children:
+                    "loading" === r
+                      ? "LOADING SOUND"
+                      : `SOUND ${t ? "ON" : "OFF"}`,
+                }),
+              ],
+            }),
+            "error" === r &&
+              (0, a.jsx)("p", {
+                className: "audio-error",
+                role: "status",
+                children: "Sound could not start. Tap to retry.",
+              }),
+          ],
+        });
+      }
+    },
+    68379: (e, t, r) => {
+      "use strict";
+      r.d(t, { Wm: () => m, hU: () => h, mH: () => u });
+      var a = r(12115),
+        n = r(45911),
+        s = r(63018),
+        i = r(88283),
+        o = r(74921),
+        l = r(95295),
+        c = r(35532);
+      n.Ay.registerPlugin(s.u);
+      let d = null;
+      function u(e, t = !1) {
+        let r = document.getElementById(e);
+        r &&
+          (d
+            ? d.scrollTo(r, { offset: -72, immediate: t, duration: 1.6 })
+            : r.scrollIntoView({ behavior: t ? "instant" : "smooth" }),
+          history.replaceState(null, "", `#${e}`));
+      }
+      function h(e, t = !1) {
+        t = t || window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        let r = document.getElementById("journey");
+        if (!r) return;
+        let a =
+          r.offsetTop +
+          Math.max(0, Math.min(1, e)) * (r.offsetHeight - innerHeight);
+        d
+          ? d.scrollTo(a, { immediate: t, duration: 2.2 })
+          : window.scrollTo({ top: a, behavior: t ? "instant" : "smooth" });
+      }
+      function m(e) {
+        (0, a.useEffect)(() => {
+          let t = new i.A({ lerp: 0.085, smoothWheel: !e, syncTouch: !1 });
+          ((d = t), t.on("scroll", s.u.update));
+          let r = (0, o.k9)((r, a) => {
+              t.raf(1e3 * r);
+              let n = (0, c.J6)(o.iE.travel),
+                s = (0, c.Gd)(n),
+                i = o.iE.travel >= c.Pm && o.iE.travel < c.ir,
+                l = (0, c.wP)(o.iE.roomAngle, s);
+              o.iE.roomAngle =
+                e || !i ? s : o.iE.roomAngle + l * (1 - Math.exp(-a / 90));
+              let d = 0.01 > Math.abs((0, c.wP)(o.iE.roomAngle, s));
+              (d && (o.iE.roomAngle = s),
+                (o.iE.roomDoor = n),
+                (o.iE.doorAligned = d && o.iE.travel >= c.Pm));
+            }, -10),
+            a = o.iE.travel,
+            u = n.Ay.context(() => {
+              (n.Ay.to(o.iE, {
+                travel: 1,
+                ease: "none",
+                scrollTrigger: {
+                  trigger: "#journey",
+                  start: "top top",
+                  end: "bottom bottom",
+                  scrub: !0,
+                },
+                onUpdate: () => {
+                  (((a < 0.48 && o.iE.travel >= 0.48) ||
+                    (a > 0.48 && o.iE.travel <= 0.48)) &&
+                    !e &&
+                    (0, l.q3)("taiko"),
+                    (a = o.iE.travel));
+                },
+              }),
+                document.querySelector(".hero-content") &&
+                  n.Ay.to(".hero-content", {
+                    opacity: 0,
+                    y: e ? 0 : -50,
+                    ease: "power1.out",
+                    scrollTrigger: {
+                      trigger: "#journey",
+                      start: "top top",
+                      end: "8% top",
+                      scrub: !0,
+                      onUpdate: (e) => {
+                        let t = document.querySelector(".hero-content");
+                        t &&
+                          (t.style.pointerEvents =
+                            e.progress > 0.05 ? "none" : "auto");
+                      },
+                    },
+                  }),
+                document.querySelector(".crossing-whisper") &&
+                  n.Ay.to(".crossing-whisper", { opacity: 0 }),
+                document.querySelector("#matsuri") &&
+                  n.Ay.to(o.iE, {
+                    stage: 1,
+                    ease: "none",
+                    scrollTrigger: {
+                      trigger: "#matsuri",
+                      start: "top bottom",
+                      end: "top 30%",
+                      scrub: !0,
+                    },
+                  }),
+                document.querySelector("#about") &&
+                  n.Ay.to(o.iE, {
+                    finale: 1,
+                    ease: "none",
+                    scrollTrigger: {
+                      trigger: "#about",
+                      start: "top bottom",
+                      end: "top 20%",
+                      scrub: !0,
+                    },
+                  }),
+                document.querySelectorAll("[data-reveal]").forEach((t) => {
+                  t.matches(".path-card, .artist-card") ||
+                    n.Ay.fromTo(
+                      t,
+                      { opacity: +!!e, y: 35 * !e },
+                      {
+                        opacity: 1,
+                        y: 0,
+                        duration: 1.1,
+                        ease: "power2.out",
+                        scrollTrigger: {
+                          trigger: t,
+                          start: "top 92%",
+                          once: !0,
+                        },
+                      },
+                    );
+                }),
+                !e &&
+                  document.querySelector(".story-photo") &&
+                  document.querySelector(".story-grid") &&
+                  n.Ay.fromTo(
+                    ".story-photo",
+                    { scale: 1.12, yPercent: -3 },
+                    {
+                      scale: 1,
+                      yPercent: 3,
+                      ease: "none",
+                      scrollTrigger: {
+                        trigger: ".story-grid",
+                        start: "top bottom",
+                        end: "bottom top",
+                        scrub: 1,
+                      },
+                    },
+                  ),
+                document.querySelectorAll(".path-card").forEach((t, r) => {
+                  n.Ay.fromTo(
+                    t,
+                    {
+                      opacity: +!!e,
+                      rotationX: 12 * !e,
+                      rotationZ: e ? 0 : r % 2 ? 4 : -4,
+                      y: 65 * !e,
+                      transformOrigin: "50% 100%",
+                    },
+                    {
+                      opacity: 1,
+                      rotationX: 0,
+                      rotationZ: 0,
+                      y: 0,
+                      duration: 1.25,
+                      ease: "power3.out",
+                      scrollTrigger: { trigger: t, start: "top 94%", once: !0 },
+                    },
+                  );
+                }),
+                document.querySelectorAll(".artist-art").forEach((t) => {
+                  n.Ay.fromTo(
+                    t,
+                    {
+                      clipPath: e ? "inset(0)" : "inset(0 50% 0 50%)",
+                      scale: e ? 1 : 1.1,
+                    },
+                    {
+                      clipPath: "inset(0)",
+                      scale: 1,
+                      duration: 1.35,
+                      ease: "power3.inOut",
+                      scrollTrigger: { trigger: t, start: "top 92%", once: !0 },
+                    },
+                  );
+                }));
+            }),
+            m = () => s.u.refresh(),
+            p = () => {
+              let e = o.iE.travel;
+              (t.resize(), m(), h(e, !0), s.u.update());
+            };
+          (window.addEventListener("resize", p), document.fonts.ready.then(m));
+          let g = () => {
+            document.hidden ? t.stop() : (t.start(), m());
+          };
+          document.addEventListener("visibilitychange", g);
+          let f = new Set(),
+            v = new IntersectionObserver(
+              (e) => {
+                for (let t of e)
+                  t.isIntersecting ? f.add(t.target) : f.delete(t.target);
+                o.iE.visible = f.size > 0;
+              },
+              { rootMargin: "200px" },
+            );
+          return (
+            document
+              .querySelectorAll("#journey, #paths, #matsuri, #contact, #about")
+              .forEach((e) => v.observe(e)),
+            () => {
+              (u.revert(),
+                r(),
+                t.destroy(),
+                (d = null),
+                document.removeEventListener("visibilitychange", g),
+                window.removeEventListener("resize", p),
+                v.disconnect(),
+                (o.iE.visible = !0),
+                (o.iE.inVoid = !1),
+                (o.iE.roomDoor = 0),
+                (o.iE.roomAngle = (0, c.Gd)(0)),
+                (o.iE.doorAligned = !1),
+                (o.iE.openDoor = -1),
+                (o.iE.doorAmount = 0),
+                (o.iE.travel = 0),
+                (o.iE.stage = 0),
+                (o.iE.finale = 0));
+            }
+          );
+        }, [e]);
+      }
+    },
+    73916: (e, t, r) => {
+      "use strict";
+      r.d(t, { UT: () => s, VJ: () => n, i6: () => i });
+      let a = null;
+      function n(e) {
+        return a ? a(e) : (window.location.assign(e), !0);
+      }
+      function s() {
+        window.dispatchEvent(new Event("pecfest:explore"));
+      }
+      function i(e) {
+        return (
+          (a = e),
+          () => {
+            a === e && (a = null);
+          }
+        );
+      }
+    },
+    74921: (e, t, r) => {
+      "use strict";
+      r.d(t, { iE: () => c, k9: () => l });
+      var a = r(45911),
+        n = r(35532);
+      a.Ay.ticker.lagSmoothing(500, 33);
+      let s = new Map(),
+        i = [];
+      function o(e, t) {
+        if (!document.hidden) for (let r of i) r(e, Math.min(t, 50));
+      }
+      function l(e, t = 0) {
+        return (
+          0 === s.size && a.Ay.ticker.add(o),
+          s.set(e, t),
+          (i = [...s].sort((e, t) => e[1] - t[1]).map(([e]) => e)),
+          () => {
+            (s.delete(e),
+              (i = [...s].sort((e, t) => e[1] - t[1]).map(([e]) => e)),
+              0 === s.size && a.Ay.ticker.remove(o));
+          }
+        );
+      }
+      let c = {
+        travel: 0,
+        stage: 0,
+        finale: 0,
+        burst: 0,
+        visible: !0,
+        inVoid: !1,
+        covered: !1,
+        roomDoor: 0,
+        roomAngle: (0, n.Gd)(0),
+        doorAligned: !1,
+        openDoor: -1,
+        doorAmount: 0,
+        sceneRevision: 0,
+      };
+    },
+    77976: (e, t, r) => {
+      "use strict";
+      r.d(t, { i3: () => n });
+      var a = r(95155);
+      function n({ diagonal: e = !1 }) {
+        return (0, a.jsx)("svg", {
+          viewBox: "0 0 24 24",
+          fill: "none",
+          "aria-hidden": "true",
+          children: (0, a.jsx)("path", {
+            d: e ? "M5 19 19 5M5 5h14v14" : "M3 12h17m-6-6 6 6-6 6",
+            stroke: "currentColor",
+            strokeWidth: "1.3",
+          }),
+        });
+      }
+      r(12115);
+    },
+    95295: (e, t, r) => {
+      "use strict";
+      let a;
+      r.d(t, {
+        L3: () => w,
+        RJ: () => v,
+        gb: () => p,
+        kI: () => x,
+        q3: () => y,
+      });
+      var n = r(14987),
+        s = r(52228),
+        i = r(24800);
+      let o = null,
+        l = null,
+        c = !1,
+        d = !1,
+        u = !1,
+        h = 0;
+      function m() {
+        if (!(!c || d || u || o?.state() !== "loaded" || o.playing())) {
+          if (n.Howler.ctx && "running" !== n.Howler.ctx.state)
+            return void (0, i.JB)(!0, "waiting");
+          ((u = !0), o.play());
+        }
+      }
+      function p() {
+        if (!c || d) return;
+        if (!n.Howler.ctx || "running" === n.Howler.ctx.state) return void m();
+        let e = h;
+        (n.Howler.ctx
+          ?.resume()
+          .then(() => {
+            e === h && m();
+          })
+          .catch(() => {
+            c && e === h && (0, i.JB)(!0, "waiting");
+          }),
+          m());
+      }
+      function g() {
+        (o?.state() === "loaded" && o.pause(),
+          l?.state() === "loaded" && l.stop(),
+          (u = !1));
+      }
+      function f() {
+        (clearTimeout(a),
+          (h += 1),
+          o?.unload(),
+          l?.unload(),
+          (o = null),
+          (l = null),
+          (u = !1));
+      }
+      function v(e) {
+        if (((c = e), (d = document.hidden), !e)) {
+          (clearTimeout(a), g(), (0, i.JB)(!1, "off"));
+          return;
+        }
+        if (((0, i.JB)(!0, o?.playing() ? "playing" : "loading"), !o)) {
+          let e = ++h,
+            t = () => {
+              if (e !== h) return;
+              let t = c;
+              ((c = !1), f(), t && (0, i.JB)(!1, "error"));
+            };
+          ((o = new n.Howl({
+            src: [(0, s.sU)("/audio/ambience.mp3")],
+            loop: !0,
+            volume: 0.28,
+            preload: !1,
+            onload: () => {
+              e === h && (clearTimeout(a), m());
+            },
+            onplay: () => {
+              e === h &&
+                ((u = !1),
+                !c || d ? g() : (clearTimeout(a), (0, i.JB)(!0, "playing")));
+            },
+            onloaderror: t,
+            onplayerror: () => {
+              e === h &&
+                ((u = !1),
+                n.Howler.ctx?.state === "suspended"
+                  ? (c && (0, i.JB)(!0, "waiting"), o?.once("unlock", m))
+                  : t());
+            },
+          })),
+            (l = new n.Howl({
+              src: ["/audio/cues.mp3"],
+              volume: 0.34,
+              preload: !1,
+              sprite: {
+                clack: [0, 300],
+                slash: [500, 650],
+                taiko: [1400, 1400],
+              },
+              onplay: () => {
+                e === h && (!c || d) && l?.stop();
+              },
+              onloaderror: () =>
+                console.warn("Festival interaction sounds are unavailable."),
+            })));
+        }
+        let t = h;
+        (clearTimeout(a),
+          (a = setTimeout(() => {
+            c &&
+              t === h &&
+              o?.state() !== "loaded" &&
+              ((c = !1), f(), (0, i.JB)(!1, "error"));
+          }, 15e3)),
+          "unloaded" === o.state() && o.load(),
+          l?.state() === "unloaded" && l.load(),
+          p());
+      }
+      function y(e) {
+        c && !d && l?.state() === "loaded" && l.play(e);
+      }
+      function x(e) {
+        (d = e) ? g() : p();
+      }
+      function w() {
+        let e = (0, i.s_)().enabled;
+        ((c = !1), (d = !1), f(), (0, i.JB)(e, e ? "waiting" : "off"));
+      }
+    },
+  },
+  (e) => {
+    (e.O(0, [5592, 1831, 8500, 4987, 5911, 3018, 5240, 8441, 3794, 7358], () =>
+      e((e.s = 20851)),
+    ),
+      (_N_E = e.O()));
+  },
+]);

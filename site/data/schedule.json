@@ -1,0 +1,215 @@
+{
+  "capturedAt": "2026-11-06",
+  "tabs": [
+    {
+      "key": "academics",
+      "label": "Education & Academics",
+      "dateLabel": "Education & Academic Background",
+      "weekdayLabel": "Academics",
+      "dayNumLabel": "01",
+      "monthLabel": "EDU",
+      "tag": "ACADEMIC FOUNDATION",
+      "summary": "Formal computer science & engineering education at GNDEC Ludhiana, with senior secondary foundations in sciences and mathematics.",
+      "entries": [
+        {
+          "id": "btech-it",
+          "rowId": "btech-it",
+          "name": "B.Tech in Information Technology",
+          "title": "B.Tech in Information Technology",
+          "institution": "Guru Nanak Dev Engineering College (GNDEC), Ludhiana",
+          "society": "Guru Nanak Dev Engineering College (GNDEC), Ludhiana",
+          "venue": "Ludhiana, Punjab",
+          "period": "2025 – 2029 (3rd Semester)",
+          "badge": "8+ GPA",
+          "badgeType": "gold",
+          "score": "8+ GPA",
+          "details": "Maintaining an 8+ GPA. Rigorous coursework in Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Computer Networks, and Operating Systems.",
+          "summary": "Information Technology undergraduate maintaining an 8+ GPA across core computer science and software systems.",
+          "status": "In Progress"
+        },
+        {
+          "id": "class-xii",
+          "rowId": "class-xii",
+          "name": "Class XII (Senior Secondary)",
+          "title": "Class XII (Senior Secondary)",
+          "institution": "Oasis Public School",
+          "society": "Oasis Public School",
+          "venue": "Senior Secondary Board",
+          "period": "Senior Secondary",
+          "badge": "75% Score",
+          "badgeType": "blue",
+          "score": "75%",
+          "details": "Completed senior secondary education with focus on Physics, Chemistry, and Mathematics (PCM), scoring 75%.",
+          "summary": "Senior secondary school certificate with foundational coursework in Physics, Chemistry, and Advanced Mathematics.",
+          "status": "Completed"
+        },
+        {
+          "id": "class-x",
+          "rowId": "class-x",
+          "name": "Class X (Secondary)",
+          "title": "Class X (Secondary)",
+          "institution": "The Town School",
+          "society": "The Town School",
+          "venue": "Secondary School Board",
+          "period": "Secondary School",
+          "badge": "83% Score",
+          "badgeType": "teal",
+          "score": "83%",
+          "details": "Completed secondary schooling with distinction, scoring 83% across mathematics, sciences, and computer applications.",
+          "summary": "Secondary education with strong academic honors in mathematics, sciences, and foundational computing.",
+          "status": "Completed"
+        }
+      ]
+    },
+    {
+      "key": "hackathons",
+      "label": "Hackathons & Selections",
+      "dateLabel": "Hackathons & Technical Competitions",
+      "weekdayLabel": "Hackathons",
+      "dayNumLabel": "02",
+      "monthLabel": "HACK",
+      "tag": "COMPETITIVE ARENA",
+      "summary": "High-intensity 24–48hr hackathons and competitive technical challenges testing rapid architecture, problem solving, and full-stack execution.",
+      "entries": [
+        {
+          "id": "bitnbuild",
+          "rowId": "bitnbuild",
+          "name": "BitNBuild International Hackathon",
+          "title": "BitNBuild International Hackathon",
+          "institution": "Thapar Institute of Engineering & Technology, Patiala",
+          "society": "Thapar Institute of Engineering & Technology, Patiala",
+          "venue": "Patiala, Punjab",
+          "period": "International Level Hackathon",
+          "badge": "International Hackathon",
+          "badgeType": "gold",
+          "score": "Participant",
+          "details": "Participated in the international-level hackathon building full-stack solutions under tight deadlines, collaborating and deploying robust prototypes against collegiate teams worldwide.",
+          "summary": "Built full-stack software architectures under tight 36-hour sprint constraints at Thapar University.",
+          "status": "Participated"
+        },
+        {
+          "id": "zinnovatio",
+          "rowId": "zinnovatio",
+          "name": "Zinnovatio 4.0 Hackathon",
+          "title": "Zinnovatio 4.0 Hackathon",
+          "institution": "Chandigarh University",
+          "society": "Chandigarh University",
+          "venue": "Mohali / Gharuan, Punjab",
+          "period": "State-Level Hackathon Finale",
+          "badge": "Qualified Online Selection · Finale Competitor",
+          "badgeType": "crimson",
+          "score": "PPT Qualified Finalist",
+          "details": "Qualified the competitive online PPT selection round and competed in the finale at Chandigarh University, pitching and defending system architecture before industry evaluators.",
+          "summary": "Cleared competitive preliminary technical screening and competed in the on-campus hackathon finale.",
+          "status": "Qualified & Competed"
+        },
+        {
+          "id": "thinkathon",
+          "rowId": "thinkathon",
+          "name": "Thinkathon",
+          "title": "Thinkathon",
+          "institution": "Guru Nanak Dev Engineering College",
+          "society": "Guru Nanak Dev Engineering College",
+          "venue": "GNDEC Campus, Ludhiana",
+          "period": "College-Level Innovation Hackathon",
+          "badge": "Campus Engineering Hackathon",
+          "badgeType": "blue",
+          "score": "Participant",
+          "details": "Participated in the college-level engineering innovation hackathon, brainstorming and prototyping high-impact technical solutions for departmental and civic problem statements.",
+          "summary": "Collaborated with engineering peers on rapid solution prototyping and technical feasibility demonstrations.",
+          "status": "Participated"
+        }
+      ]
+    }
+  ],
+  "days": [
+    {
+      "key": "academics",
+      "label": "Education & Academics",
+      "dateLabel": "Education & Academic Background",
+      "weekdayLabel": "Academics",
+      "dayNumLabel": "01",
+      "monthLabel": "EDU",
+      "isPreFest": false,
+      "entries": [
+        {
+          "id": "btech-it",
+          "rowId": "btech-it",
+          "name": "B.Tech in Information Technology",
+          "society": "Guru Nanak Dev Engineering College (GNDEC), Ludhiana",
+          "venue": "Ludhiana, Punjab",
+          "startLabel": "2025",
+          "endLabel": "2029",
+          "badge": "8+ GPA",
+          "details": "Maintaining an 8+ GPA. Rigorous coursework in Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Computer Networks, and Operating Systems."
+        },
+        {
+          "id": "class-xii",
+          "rowId": "class-xii",
+          "name": "Class XII (Senior Secondary)",
+          "society": "Oasis Public School",
+          "venue": "Senior Secondary Board",
+          "startLabel": "2023",
+          "endLabel": "2024",
+          "badge": "75% Score",
+          "details": "Completed senior secondary education with focus on Physics, Chemistry, and Mathematics (PCM), scoring 75%."
+        },
+        {
+          "id": "class-x",
+          "rowId": "class-x",
+          "name": "Class X (Secondary)",
+          "society": "The Town School",
+          "venue": "Secondary School Board",
+          "startLabel": "2021",
+          "endLabel": "2022",
+          "badge": "83% Score",
+          "details": "Completed secondary schooling with distinction, scoring 83% across mathematics, sciences, and computer applications."
+        }
+      ]
+    },
+    {
+      "key": "hackathons",
+      "label": "Hackathons & Selections",
+      "dateLabel": "Hackathons & Technical Competitions",
+      "weekdayLabel": "Hackathons",
+      "dayNumLabel": "02",
+      "monthLabel": "HACK",
+      "isPreFest": false,
+      "entries": [
+        {
+          "id": "bitnbuild",
+          "rowId": "bitnbuild",
+          "name": "BitNBuild International Hackathon",
+          "society": "Thapar Institute of Engineering & Technology, Patiala",
+          "venue": "Patiala, Punjab",
+          "startLabel": "2026",
+          "endLabel": "Finale",
+          "badge": "International Hackathon",
+          "details": "Participated in the international-level hackathon building full-stack solutions under tight deadlines."
+        },
+        {
+          "id": "zinnovatio",
+          "rowId": "zinnovatio",
+          "name": "Zinnovatio 4.0 Hackathon",
+          "society": "Chandigarh University",
+          "venue": "Mohali, Punjab",
+          "startLabel": "2026",
+          "endLabel": "Finale",
+          "badge": "Qualified Online Selection · Finale Competitor",
+          "details": "Qualified the competitive online PPT selection round and competed in the finale at Chandigarh University."
+        },
+        {
+          "id": "thinkathon",
+          "rowId": "thinkathon",
+          "name": "Thinkathon",
+          "society": "Guru Nanak Dev Engineering College",
+          "venue": "Ludhiana, Punjab",
+          "startLabel": "2025",
+          "endLabel": "Finale",
+          "badge": "Campus Engineering Hackathon",
+          "details": "Participated in the college-level engineering innovation hackathon."
+        }
+      ]
+    }
+  ]
+}

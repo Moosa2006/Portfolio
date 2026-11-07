@@ -1,0 +1,174 @@
+/* Additions for the standalone recreation (not part of the original stylesheets). */
+.recreation-noscript {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #090a0c;
+  color: #efe4cd;
+  font: 14px/1.6 "Plus Jakarta Sans", sans-serif;
+  text-align: center;
+}
+
+.recreation-note {
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #c7bca9;
+}
+
+/* Contact page grid & card layout */
+.contact-channels-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 56rem; /* 896px = max-w-4xl */
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .contact-channels-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+}
+
+.contact-card {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  height: 100% !important;
+  min-height: 220px !important;
+  padding: 24px !important;
+  background: rgba(18, 22, 28, 0.85) !important;
+  border: 1px solid rgba(220, 180, 110, 0.25) !important;
+  border-radius: 12px !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+  box-sizing: border-box !important;
+}
+
+.contact-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(226, 184, 112, 0.5) !important;
+  background: rgba(24, 29, 37, 0.9) !important;
+}
+
+.contact-card-kicker {
+  display: block;
+  color: #E2B870 !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  font-weight: 600 !important;
+  margin-bottom: 8px !important;
+}
+
+.contact-card-title {
+  margin: 0 0 10px !important;
+  font-family: inherit !important;
+  font-size: clamp(1rem, 1.4vw, 1.125rem) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+  line-height: 1.35 !important;
+  color: #F8FAFC !important;
+  word-break: break-all !important;
+  overflow-wrap: anywhere !important;
+}
+
+.contact-card-desc {
+  margin: 0 0 24px !important;
+  color: #CBD5E1 !important;
+  font-size: 0.875rem !important;
+  line-height: 1.5 !important;
+}
+
+.contact-card-btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+  height: 44px !important;
+  min-height: 44px !important;
+  max-height: 44px !important;
+  margin-top: auto !important;
+  padding: 0.65rem 1.25rem !important;
+  border-radius: 8px !important;
+  background: rgba(226, 184, 112, 0.12) !important;
+  border: 1px solid rgba(226, 184, 112, 0.4) !important;
+  color: #F3E5AB !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  letter-spacing: 0.03em !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  box-sizing: border-box !important;
+  transition: all 0.2s ease !important;
+}
+
+.contact-card-btn:before,
+.contact-card-btn:after {
+  display: none !important;
+  content: none !important;
+}
+
+.contact-card-btn:hover {
+  background: #E2B870 !important;
+  color: #0F141C !important;
+  border-color: #E2B870 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 14px rgba(226, 184, 112, 0.3) !important;
+}
+
+.contact-card-btn svg {
+  width: 14px !important;
+  height: 14px !important;
+  max-width: 14px !important;
+  max-height: 14px !important;
+  flex-shrink: 0 !important;
+}
+
+.external-profile-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.5rem !important;
+  height: 38px !important;
+  min-height: 38px !important;
+  max-height: 40px !important;
+  padding: 0.5rem 1rem !important;
+  background: rgba(226, 184, 112, 0.08) !important;
+  border: 1px solid rgba(226, 184, 112, 0.35) !important;
+  border-radius: 8px !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  color: #F3E5AB !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+  box-sizing: border-box !important;
+  line-height: 1 !important;
+  transition: all 0.2s ease !important;
+}
+
+.external-profile-btn:hover {
+  background: rgba(226, 184, 112, 0.2) !important;
+  border-color: #E2B870 !important;
+  color: #FFFFFF !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 14px rgba(226, 184, 112, 0.25) !important;
+}
+
+.external-profile-btn svg {
+  width: 16px !important;
+  height: 16px !important;
+  max-width: 16px !important;
+  max-height: 16px !important;
+  flex-shrink: 0 !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}

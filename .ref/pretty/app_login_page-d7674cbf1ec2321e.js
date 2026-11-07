@@ -1,0 +1,432 @@
+(self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
+  [4520],
+  {
+    756: () => {},
+    9323: (e, s, a) => {
+      "use strict";
+      (a.r(s), a.d(s, { default: () => h }));
+      var i = a(95155),
+        n = a(12115),
+        t = a(98500),
+        l = a.n(t),
+        r = a(73321),
+        o = a(79578);
+      let c = "pecfest.postLoginRedirect";
+      function d(e) {
+        return !e ||
+          "string" != typeof e ||
+          !e.startsWith("/") ||
+          e.startsWith("//") ||
+          e.startsWith("/\\")
+          ? null
+          : e;
+      }
+      function g() {
+        let e = (0, r.useRouter)(),
+          s = (0, r.useSearchParams)(),
+          a = s?.get("error"),
+          t = s?.get("redirect"),
+          [g, h] = (0, n.useState)(!1),
+          [m, u] = (0, n.useState)(a || ""),
+          [p, j] = (0, n.useState)(""),
+          x = (0, n.useRef)(!1);
+        ((0, n.useEffect)(() => {
+          a &&
+            (u(a),
+            localStorage.removeItem("adminToken"),
+            localStorage.removeItem("adminUser"),
+            window.dispatchEvent(new Event("adminUserChanged")));
+        }, [a]),
+          (0, n.useEffect)(() => {
+            let e = d(t);
+            if (e)
+              try {
+                sessionStorage.setItem(c, e);
+              } catch {}
+          }, [t]),
+          (0, n.useEffect)(() => {
+            let s = async () => {
+              let {
+                data: { session: s },
+              } = await o.N.auth.getSession();
+              if (s?.access_token && !x.current) {
+                ((x.current = !0), h(!0), u(""), j(""));
+                try {
+                  let a = await fetch("/api/auth/google", {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify({ token: s.access_token }),
+                    }),
+                    i = await a.json();
+                  if (!a.ok) throw Error(i.error || "Sign-in failed");
+                  if (!i.token)
+                    throw Error("Sign-in did not return a session.");
+                  (localStorage.setItem("token", i.token),
+                    window.dispatchEvent(new Event("tokenChanged")),
+                    await o.N.auth.signOut(),
+                    j("Welcome to PECFEST. Your pass is ready."));
+                  let n =
+                    (function () {
+                      try {
+                        let e = d(sessionStorage.getItem(c));
+                        return (sessionStorage.removeItem(c), e);
+                      } catch {
+                        return null;
+                      }
+                    })() || "/events";
+                  setTimeout(() => e.push(n), 1200);
+                } catch (e) {
+                  (u(e instanceof Error ? e.message : "Sign-in failed"),
+                    await o.N.auth.signOut(),
+                    h(!1));
+                }
+              }
+            };
+            s();
+            let {
+              data: { subscription: a },
+            } = o.N.auth.onAuthStateChange((e, a) => {
+              "SIGNED_IN" === e && a && s();
+            });
+            return () => a.unsubscribe();
+          }, [e]));
+        let N = async () => {
+          try {
+            (h(!0),
+              u(""),
+              await o.N.auth.signInWithOAuth({
+                provider: "google",
+                options: { redirectTo: `${window.location.origin}/login` },
+              }));
+          } catch (e) {
+            (u(
+              e instanceof Error
+                ? e.message
+                : "Failed to launch Google Sign-In",
+            ),
+              h(!1));
+          }
+        };
+        return (0, i.jsxs)("main", {
+          className: "login-page-root",
+          "aria-labelledby": "login-title",
+          children: [
+            (0, i.jsx)("div", {
+              className: "login-page-bg",
+              "aria-hidden": "true",
+            }),
+            (0, i.jsx)("div", {
+              className: "login-page-vignette",
+              "aria-hidden": "true",
+            }),
+            (0, i.jsx)("div", {
+              className: "login-ambient-ring",
+              "aria-hidden": "true",
+            }),
+            (0, i.jsxs)("header", {
+              className: "login-header",
+              children: [
+                (0, i.jsxs)(l(), {
+                  href: "/",
+                  className: "login-back-btn",
+                  "aria-label": "Return to Sanctuary",
+                  children: [
+                    (0, i.jsx)("span", {
+                      "aria-hidden": "true",
+                      children: "←",
+                    }),
+                    (0, i.jsx)("span", { children: "Back to Sanctuary" }),
+                  ],
+                }),
+                (0, i.jsxs)("div", {
+                  className: "login-brand-meta",
+                  children: [
+                    (0, i.jsx)("img", {
+                      src: "/pecfest-logo-transparent.webp",
+                      alt: "PECFEST Logo",
+                      width: 36,
+                      height: 36,
+                    }),
+                    (0, i.jsx)("span", { children: "PECFEST 2026" }),
+                  ],
+                }),
+                (0, i.jsx)("div", {
+                  className: "login-header-date",
+                  children: (0, i.jsx)("span", { children: "30 OCT — 01 NOV" }),
+                }),
+              ],
+            }),
+            (0, i.jsx)("div", {
+              className: "login-container",
+              children: (0, i.jsxs)("div", {
+                className: "login-split",
+                children: [
+                  (0, i.jsxs)("aside", {
+                    className: "login-brand-panel",
+                    "aria-hidden": "true",
+                    children: [
+                      (0, i.jsx)("div", { className: "login-brand-panel-art" }),
+                      (0, i.jsxs)("div", {
+                        className: "login-brand-panel-inner",
+                        children: [
+                          (0, i.jsx)("img", {
+                            src: "/pecfest-logo-transparent.webp",
+                            alt: "",
+                            className: "login-brand-crest",
+                            width: 200,
+                            height: 200,
+                            fetchPriority: "high",
+                            decoding: "async",
+                          }),
+                          (0, i.jsx)("p", {
+                            className: "login-brand-kicker",
+                            children: "A Mystic Mikado",
+                          }),
+                          (0, i.jsx)("p", {
+                            className: "login-brand-name",
+                            children: "PECFEST 2026",
+                          }),
+                          (0, i.jsx)("p", {
+                            className: "login-brand-dates",
+                            children: "30 OCT — 01 NOV",
+                          }),
+                          (0, i.jsx)("p", {
+                            className: "login-brand-place",
+                            children:
+                              "Punjab Engineering College \xb7 Chandigarh",
+                          }),
+                        ],
+                      }),
+                      (0, i.jsx)("span", {
+                        className: "login-brand-vertical",
+                        children: "MYSTIC MIKADO \xb7 2026",
+                      }),
+                    ],
+                  }),
+                  (0, i.jsxs)("div", {
+                    className: "login-card",
+                    children: [
+                      (0, i.jsx)("div", {
+                        className: "login-badge",
+                        children: (0, i.jsx)("span", {
+                          children: "✦ A MYSTIC MIKADO \xb7 OFFICIAL PORTAL",
+                        }),
+                      }),
+                      (0, i.jsx)("p", {
+                        className: "login-dates",
+                        children: "30 OCT — 01 NOV 2026",
+                      }),
+                      (0, i.jsx)("div", {
+                        className: "login-crest-wrap",
+                        children: (0, i.jsx)("img", {
+                          src: "/pecfest-logo-transparent.webp",
+                          alt: "PECFEST 2026 Imperial Insignia",
+                          className: "login-crest-img",
+                          width: 160,
+                          height: 160,
+                          fetchPriority: "high",
+                          decoding: "async",
+                        }),
+                      }),
+                      (0, i.jsx)("h1", {
+                        id: "login-title",
+                        className: "login-title",
+                        children: "Step into the Realm",
+                      }),
+                      (0, i.jsx)("p", {
+                        className: "login-subtitle",
+                        children:
+                          "Sign in with your Google account to claim your student festival pass, register for competitions across the five realms, and personalize your schedule.",
+                      }),
+                      (0, i.jsxs)("div", {
+                        className: "login-auth-area",
+                        children: [
+                          (0, i.jsx)("button", {
+                            type: "button",
+                            onClick: N,
+                            disabled: g,
+                            "aria-busy": g,
+                            className: "login-google-btn",
+                            "aria-label": "Continue with Google",
+                            children: g
+                              ? (0, i.jsxs)(i.Fragment, {
+                                  children: [
+                                    (0, i.jsx)("span", {
+                                      className: "login-btn-spinner",
+                                      "aria-hidden": "true",
+                                    }),
+                                    (0, i.jsx)("span", {
+                                      children: "Connecting to Google...",
+                                    }),
+                                  ],
+                                })
+                              : (0, i.jsxs)(i.Fragment, {
+                                  children: [
+                                    (0, i.jsxs)("svg", {
+                                      width: "18",
+                                      height: "18",
+                                      xmlns: "http://www.w3.org/2000/svg",
+                                      viewBox: "0 0 48 48",
+                                      "aria-hidden": "true",
+                                      children: [
+                                        (0, i.jsx)("path", {
+                                          fill: "#EA4335",
+                                          d: "M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z",
+                                        }),
+                                        (0, i.jsx)("path", {
+                                          fill: "#4285F4",
+                                          d: "M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z",
+                                        }),
+                                        (0, i.jsx)("path", {
+                                          fill: "#FBBC05",
+                                          d: "M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z",
+                                        }),
+                                        (0, i.jsx)("path", {
+                                          fill: "#34A853",
+                                          d: "M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z",
+                                        }),
+                                      ],
+                                    }),
+                                    (0, i.jsx)("span", {
+                                      children: "Continue with Google",
+                                    }),
+                                  ],
+                                }),
+                          }),
+                          (0, i.jsxs)("div", {
+                            className: "login-status-box",
+                            "aria-live": "polite",
+                            children: [
+                              m &&
+                                (0, i.jsx)("div", {
+                                  className: "login-status-error",
+                                  role: "alert",
+                                  children: m,
+                                }),
+                              p &&
+                                (0, i.jsxs)("div", {
+                                  className: "login-status-success",
+                                  role: "status",
+                                  children: ["✓ ", p],
+                                }),
+                            ],
+                          }),
+                        ],
+                      }),
+                      (0, i.jsxs)("div", {
+                        className: "login-perks",
+                        children: [
+                          (0, i.jsxs)("div", {
+                            className: "login-perk-item",
+                            children: [
+                              (0, i.jsx)("span", {
+                                className: "login-perk-icon",
+                                "aria-hidden": "true",
+                                children: "⛩",
+                              }),
+                              (0, i.jsx)("strong", {
+                                children: "Digital Pass",
+                              }),
+                              (0, i.jsx)("span", {
+                                children: "Instant QR badge",
+                              }),
+                            ],
+                          }),
+                          (0, i.jsxs)("div", {
+                            className: "login-perk-item",
+                            children: [
+                              (0, i.jsx)("span", {
+                                className: "login-perk-icon",
+                                "aria-hidden": "true",
+                                children: "⚔",
+                              }),
+                              (0, i.jsx)("strong", { children: "Five Realms" }),
+                              (0, i.jsx)("span", {
+                                children: "60+ Competitions",
+                              }),
+                            ],
+                          }),
+                          (0, i.jsxs)("div", {
+                            className: "login-perk-item",
+                            children: [
+                              (0, i.jsx)("span", {
+                                className: "login-perk-icon",
+                                "aria-hidden": "true",
+                                children: "✦",
+                              }),
+                              (0, i.jsx)("strong", { children: "Programme" }),
+                              (0, i.jsx)("span", {
+                                children: "Personal itinerary",
+                              }),
+                            ],
+                          }),
+                        ],
+                      }),
+                      (0, i.jsx)("div", {
+                        className: "login-card-footer",
+                        children: (0, i.jsx)("span", {
+                          className: "login-disclaimer",
+                          children:
+                            "Punjab Engineering College \xb7 Chandigarh",
+                        }),
+                      }),
+                    ],
+                  }),
+                ],
+              }),
+            }),
+          ],
+        });
+      }
+      function h() {
+        return (0, i.jsx)(n.Suspense, {
+          fallback: (0, i.jsxs)("main", {
+            className: "login-page-root",
+            children: [
+              (0, i.jsx)("div", {
+                className: "login-page-bg",
+                "aria-hidden": "true",
+              }),
+              (0, i.jsx)("div", {
+                className: "login-container",
+                children: (0, i.jsxs)("div", {
+                  className: "login-card login-card-loading",
+                  children: [
+                    (0, i.jsx)("span", {
+                      className: "login-btn-spinner login-spinner-gold",
+                      "aria-hidden": "true",
+                    }),
+                    (0, i.jsx)("p", {
+                      className: "login-loading-text",
+                      role: "status",
+                      children: "OPENING THE PASS GATE...",
+                    }),
+                  ],
+                }),
+              }),
+            ],
+          }),
+          children: (0, i.jsx)(g, {}),
+        });
+      }
+      a(756);
+    },
+    37662: (e, s, a) => {
+      Promise.resolve().then(a.bind(a, 9323));
+    },
+    79578: (e, s, a) => {
+      "use strict";
+      a.d(s, { N: () => i });
+      let i = (0, a(8171).UU)(
+        "https://ujqgrupfrpuondymtggr.supabase.co",
+        "sb_publishable_Z9P84U_ix8OHy_e08ONw0w_-uZF3AY_",
+      );
+    },
+  },
+  (e) => {
+    (e.O(0, [2557, 5730, 8500, 9304, 5225, 8441, 3794, 7358], () =>
+      e((e.s = 37662)),
+    ),
+      (_N_E = e.O()));
+  },
+]);
