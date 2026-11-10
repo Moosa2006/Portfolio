@@ -167,7 +167,7 @@ The codebase is statically deployable to any standard edge host or CDN:
 
 ## Contact & Connect
 
-- **Developer:** Moosa
+- **Developed by:** Moosa
 - **Role:** Full-Stack Software Developer & Systems Builder
 - **Institution:** Guru Nanak Dev Engineering College (GNDEC), Ludhiana
 - **Email:** moosarajput2006@gmail.com
@@ -176,8 +176,11 @@ The codebase is statically deployable to any standard edge host or CDN:
 - **GitHub:** https://github.com/Moosa2006
 - **LinkedIn:** https://www.linkedin.com/in/moosa2006/
 
----
 
 ## License
 
 This project is released under the MIT License.
+
+
+
+
